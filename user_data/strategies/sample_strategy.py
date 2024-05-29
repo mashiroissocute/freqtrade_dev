@@ -64,7 +64,7 @@ class SampleStrategy(IStrategy):
     # trailing_stop_positive_offset = 0.0  # Disabled / not configured
 
     # Optimal timeframe for the strategy.
-    timeframe = '1m'
+    timeframe = '5m'
 
     # Run "populate_indicators()" only for new candle.
     process_only_new_candles = True
@@ -72,13 +72,13 @@ class SampleStrategy(IStrategy):
 
     # Hyperoptable parameters
     # emaThr = IntParameter(5, 55, default=200, space="buy")
-    period = IntParameter(5, 205, default=1440, space="buy")
-    highThr = IntParameter(0, 1, default=0.9, space="buy")
-    lowThr = IntParameter(0, 1, default=1.1, space="buy")
+    period = IntParameter(5, 205, default=48, space="buy")
+    highThr = IntParameter(0, 1, default=0.95, space="buy")
+    lowThr = IntParameter(0, 1, default=1.05, space="buy")
     
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 1440
+    startup_candle_count: int = 50
 
     # Optional order type mapping.
     order_types = {
