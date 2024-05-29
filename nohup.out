@@ -807,3 +807,1861 @@ telegram.error.InvalidToken: You must pass the token you received from https://t
 2024-05-29 09:59:51,284 - freqtrade.worker - INFO - Bot heartbeat. PID=66761, version='2024.5-dev-185b0ee', state='RUNNING'
 2024-05-29 10:00:53,032 - freqtrade.worker - INFO - Bot heartbeat. PID=66761, version='2024.5-dev-185b0ee', state='RUNNING'
 2024-05-29 10:01:56,283 - freqtrade.worker - INFO - Bot heartbeat. PID=66761, version='2024.5-dev-185b0ee', state='RUNNING'
+2024-05-29 11:49:13,842 - freqtrade - INFO - freqtrade 2024.5-dev-2386e79
+2024-05-29 11:49:14,254 - freqtrade.worker - INFO - Starting worker 2024.5-dev-2386e79
+2024-05-29 11:49:14,254 - freqtrade.configuration.load_config - INFO - Using config: user_data/config_future.json ...
+2024-05-29 11:49:14,254 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///tradesv3.dryrun.sqlite"
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 100 ...
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Using user-data directory: /usr/local/service/freqtrade_dev/user_data ...
+2024-05-29 11:49:14,255 - freqtrade.configuration.configuration - INFO - Using data directory: /usr/local/service/freqtrade_dev/user_data/data/binance ...
+2024-05-29 11:49:14,255 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-05-29 11:49:14,262 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-05-29 11:49:14,262 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/usr/local/service/freqtrade_dev/user_data/strategies/sample_strategy.py'...
+2024-05-29 11:49:14,269 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 100.
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 10000}
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-05-29 11:49:14,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -1
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 50
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-05-29 11:49:14,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 100
+2024-05-29 11:49:14,270 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-05-29 11:49:14,273 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-05-29 11:49:14,273 - freqtrade.exchange.exchange - INFO - Using CCXT 4.3.30
+2024-05-29 11:49:14,273 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2024-05-29 11:49:14,280 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2024-05-29 11:49:14,286 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-05-29 11:49:16,692 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-05-29 11:49:16,717 - freqtrade.wallets - INFO - Wallets synced.
+2024-05-29 11:49:16,760 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/usr/local/service/freqtrade_dev/freqtrade/plugins/pairlist/StaticPairList.py'...
+2024-05-29 11:49:16,792 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring CVX/USDT:USDT from whitelist. Market is not active.
+2024-05-29 11:49:16,796 - freqtrade.plugins.pairlistmanager - WARNING - Pair BNB/USDT:USDT in your blacklist. Removing it from whitelist...
+2024-05-29 11:49:16,796 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 142 pairs: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'XRP/USDT:USDT', 'ADA/USDT:USDT', 'DOGE/USDT:USDT', 'SOL/USDT:USDT', 'TRX/USDT:USDT', 'MATIC/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', '1000SHIB/USDT:USDT', 'BCH/USDT:USDT', 'AVAX/USDT:USDT', 'XLM/USDT:USDT', 'LINK/USDT:USDT', 'XMR/USDT:USDT', 'UNI/USDT:USDT', 'ATOM/USDT:USDT', 'ETC/USDT:USDT', 'HBAR/USDT:USDT', 'ICP/USDT:USDT', 'FIL/USDT:USDT', 'LDO/USDT:USDT', 'APT/USDT:USDT', 'QNT/USDT:USDT', 'ARB/USDT:USDT', 'VET/USDT:USDT', 'MKR/USDT:USDT', 'OP/USDT:USDT', 'NEAR/USDT:USDT', 'AAVE/USDT:USDT', 'GRT/USDT:USDT', 'ALGO/USDT:USDT', 'STX/USDT:USDT', 'XTZ/USDT:USDT', 'EOS/USDT:USDT', 'EGLD/USDT:USDT', 'AXS/USDT:USDT', 'SAND/USDT:USDT', 'THETA/USDT:USDT', 'IMX/USDT:USDT', 'SNX/USDT:USDT', 'INJ/USDT:USDT', 'FTM/USDT:USDT', 'MANA/USDT:USDT', 'NEO/USDT:USDT', 'RUNE/USDT:USDT', 'RNDR/USDT:USDT', 'APE/USDT:USDT', 'KAVA/USDT:USDT', 'FLOW/USDT:USDT', '1000XEC/USDT:USDT', 'CHZ/USDT:USDT', 'KLAY/USDT:USDT', 'CFX/USDT:USDT', 'FXS/USDT:USDT', 'ZEC/USDT:USDT', 'SUI/USDT:USDT', 'CRV/USDT:USDT', 'GALA/USDT:USDT', 'MINA/USDT:USDT', '1000LUNC/USDT:USDT', 'DYDX/USDT:USDT', '1000PEPE/USDT:USDT', 'COMP/USDT:USDT', 'SFP/USDT:USDT', 'DASH/USDT:USDT', 'ASTR/USDT:USDT', 'GMX/USDT:USDT', 'WOO/USDT:USDT', 'AR/USDT:USDT', 'ROSE/USDT:USDT', 'ZIL/USDT:USDT', '1INCH/USDT:USDT', 'BAT/USDT:USDT', 'LRC/USDT:USDT', 'ENJ/USDT:USDT', 'AGIX/USDT:USDT', 'QTUM/USDT:USDT', 'ENS/USDT:USDT', 'SEI/USDT:USDT', 'CELO/USDT:USDT', 'XEM/USDT:USDT', 'MASK/USDT:USDT', 'LPT/USDT:USDT', 'FET/USDT:USDT', 'OCEAN/USDT:USDT', 'RVN/USDT:USDT', 'ANKR/USDT:USDT', 'JASMY/USDT:USDT', 'HOT/USDT:USDT', 'YFI/USDT:USDT', 'BAL/USDT:USDT', 'GMT/USDT:USDT', 'BLUR/USDT:USDT', 'WAVES/USDT:USDT', 'KSM/USDT:USDT', '1000FLOKI/USDT:USDT', 'ICX/USDT:USDT', 'T/USDT:USDT', 'LUNA2/USDT:USDT', 'ZRX/USDT:USDT', 'SXP/USDT:USDT', 'ONT/USDT:USDT', 'PENDLE/USDT:USDT', 'BAND/USDT:USDT', 'SSV/USDT:USDT', 'WLD/USDT:USDT', 'SUSHI/USDT:USDT', 'IOTX/USDT:USDT', 'IOST/USDT:USDT', 'ONE/USDT:USDT', 'MAGIC/USDT:USDT', 'CKB/USDT:USDT', 'STG/USDT:USDT', 'ZEN/USDT:USDT', 'SKL/USDT:USDT', 'UMA/USDT:USDT', 'LOOM/USDT:USDT', 'BIGTIME/USDT:USDT', 'LQTY/USDT:USDT', 'STORJ/USDT:USDT', 'CYBER/USDT:USDT', 'MEME/USDT:USDT', 'TIA/USDT:USDT', 'ORDI/USDT:USDT', '1000SATS/USDT:USDT', 'MANTA/USDT:USDT', 'ALT/USDT:USDT', 'XAI/USDT:USDT', 'AI/USDT:USDT', 'PYTH/USDT:USDT', 'ACE/USDT:USDT', 'NFP/USDT:USDT', 'JTO/USDT:USDT', '1000RATS/USDT:USDT', 'RONIN/USDT:USDT', 'JUP/USDT:USDT', 'CAKE/USDT:USDT', 'ID/USDT:USDT', 'ENA/USDT:USDT', 'WIF/USDT:USDT']
+2024-05-29 11:49:16,796 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-05-29 11:49:16,797 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): highThr = 0.95
+2024-05-29 11:49:16,797 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): lowThr = 1.05
+2024-05-29 11:49:16,797 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): period = 48
+2024-05-29 11:49:16,797 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-05-29 11:49:16,797 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-05-29 11:49:16,797 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2024-05-29 11:49:16,797 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2024-05-29 11:49:16,797 - freqtrade.worker - INFO - Changing state to: RUNNING
+2024-05-29 11:49:16,797 - freqtrade.util.migrations.binance_mig - WARNING - Migrating binance futures pairs in database.
+2024-05-29 11:49:16,800 - freqtrade.util.migrations.binance_mig - WARNING - Done migrating binance futures pairs in database.
+2024-05-29 11:49:16,806 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2024-05-29 11:49:16,807 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'0': 10000}`\n*Stoploss:* `-1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2024-05-29 11:49:16,807 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2024-05-29 11:49:19,285 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2024-05-29 11:49:19,285 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2024-05-29 11:49:19,285 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2024-05-29 11:49:19,286 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2024-05-29 11:49:19,287 - freqtrade - INFO - SIGINT received, aborting ...
+2024-05-29 11:49:19,429 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-114' coro=<Throttler.looper() done, defined at /root/miniconda3/envs/freqtrade/lib/python3.11/site-packages/ccxt/async_support/base/throttler.py:21> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-29 11:49:20,471 - freqtrade - INFO - freqtrade 2024.5-dev-2386e79
+2024-05-29 11:49:20,880 - freqtrade.worker - INFO - Starting worker 2024.5-dev-2386e79
+2024-05-29 11:49:20,880 - freqtrade.configuration.load_config - INFO - Using config: user_data/config_future.json ...
+2024-05-29 11:49:20,881 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:///tradesv3.dryrun.sqlite"
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 100 ...
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Using user-data directory: /usr/local/service/freqtrade_dev/user_data ...
+2024-05-29 11:49:20,881 - freqtrade.configuration.configuration - INFO - Using data directory: /usr/local/service/freqtrade_dev/user_data/data/binance ...
+2024-05-29 11:49:20,882 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-05-29 11:49:20,888 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-05-29 11:49:20,888 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-05-29 11:49:20,895 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/usr/local/service/freqtrade_dev/user_data/strategies/sample_strategy.py'...
+2024-05-29 11:49:20,895 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 100.
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 10000}
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -1
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 50
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-05-29 11:49:20,896 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 100
+2024-05-29 11:49:20,896 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-05-29 11:49:20,899 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-05-29 11:49:20,899 - freqtrade.exchange.exchange - INFO - Using CCXT 4.3.30
+2024-05-29 11:49:20,899 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2024-05-29 11:49:20,906 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'options': {'defaultType': 'swap'}}
+2024-05-29 11:49:20,912 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-05-29 11:49:23,337 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-05-29 11:49:23,361 - freqtrade.wallets - INFO - Wallets synced.
+2024-05-29 11:49:23,409 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/usr/local/service/freqtrade_dev/freqtrade/plugins/pairlist/StaticPairList.py'...
+2024-05-29 11:49:23,441 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring CVX/USDT:USDT from whitelist. Market is not active.
+2024-05-29 11:49:23,444 - freqtrade.plugins.pairlistmanager - WARNING - Pair BNB/USDT:USDT in your blacklist. Removing it from whitelist...
+2024-05-29 11:49:23,444 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 142 pairs: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'XRP/USDT:USDT', 'ADA/USDT:USDT', 'DOGE/USDT:USDT', 'SOL/USDT:USDT', 'TRX/USDT:USDT', 'MATIC/USDT:USDT', 'DOT/USDT:USDT', 'LTC/USDT:USDT', '1000SHIB/USDT:USDT', 'BCH/USDT:USDT', 'AVAX/USDT:USDT', 'XLM/USDT:USDT', 'LINK/USDT:USDT', 'XMR/USDT:USDT', 'UNI/USDT:USDT', 'ATOM/USDT:USDT', 'ETC/USDT:USDT', 'HBAR/USDT:USDT', 'ICP/USDT:USDT', 'FIL/USDT:USDT', 'LDO/USDT:USDT', 'APT/USDT:USDT', 'QNT/USDT:USDT', 'ARB/USDT:USDT', 'VET/USDT:USDT', 'MKR/USDT:USDT', 'OP/USDT:USDT', 'NEAR/USDT:USDT', 'AAVE/USDT:USDT', 'GRT/USDT:USDT', 'ALGO/USDT:USDT', 'STX/USDT:USDT', 'XTZ/USDT:USDT', 'EOS/USDT:USDT', 'EGLD/USDT:USDT', 'AXS/USDT:USDT', 'SAND/USDT:USDT', 'THETA/USDT:USDT', 'IMX/USDT:USDT', 'SNX/USDT:USDT', 'INJ/USDT:USDT', 'FTM/USDT:USDT', 'MANA/USDT:USDT', 'NEO/USDT:USDT', 'RUNE/USDT:USDT', 'RNDR/USDT:USDT', 'APE/USDT:USDT', 'KAVA/USDT:USDT', 'FLOW/USDT:USDT', '1000XEC/USDT:USDT', 'CHZ/USDT:USDT', 'KLAY/USDT:USDT', 'CFX/USDT:USDT', 'FXS/USDT:USDT', 'ZEC/USDT:USDT', 'SUI/USDT:USDT', 'CRV/USDT:USDT', 'GALA/USDT:USDT', 'MINA/USDT:USDT', '1000LUNC/USDT:USDT', 'DYDX/USDT:USDT', '1000PEPE/USDT:USDT', 'COMP/USDT:USDT', 'SFP/USDT:USDT', 'DASH/USDT:USDT', 'ASTR/USDT:USDT', 'GMX/USDT:USDT', 'WOO/USDT:USDT', 'AR/USDT:USDT', 'ROSE/USDT:USDT', 'ZIL/USDT:USDT', '1INCH/USDT:USDT', 'BAT/USDT:USDT', 'LRC/USDT:USDT', 'ENJ/USDT:USDT', 'AGIX/USDT:USDT', 'QTUM/USDT:USDT', 'ENS/USDT:USDT', 'SEI/USDT:USDT', 'CELO/USDT:USDT', 'XEM/USDT:USDT', 'MASK/USDT:USDT', 'LPT/USDT:USDT', 'FET/USDT:USDT', 'OCEAN/USDT:USDT', 'RVN/USDT:USDT', 'ANKR/USDT:USDT', 'JASMY/USDT:USDT', 'HOT/USDT:USDT', 'YFI/USDT:USDT', 'BAL/USDT:USDT', 'GMT/USDT:USDT', 'BLUR/USDT:USDT', 'WAVES/USDT:USDT', 'KSM/USDT:USDT', '1000FLOKI/USDT:USDT', 'ICX/USDT:USDT', 'T/USDT:USDT', 'LUNA2/USDT:USDT', 'ZRX/USDT:USDT', 'SXP/USDT:USDT', 'ONT/USDT:USDT', 'PENDLE/USDT:USDT', 'BAND/USDT:USDT', 'SSV/USDT:USDT', 'WLD/USDT:USDT', 'SUSHI/USDT:USDT', 'IOTX/USDT:USDT', 'IOST/USDT:USDT', 'ONE/USDT:USDT', 'MAGIC/USDT:USDT', 'CKB/USDT:USDT', 'STG/USDT:USDT', 'ZEN/USDT:USDT', 'SKL/USDT:USDT', 'UMA/USDT:USDT', 'LOOM/USDT:USDT', 'BIGTIME/USDT:USDT', 'LQTY/USDT:USDT', 'STORJ/USDT:USDT', 'CYBER/USDT:USDT', 'MEME/USDT:USDT', 'TIA/USDT:USDT', 'ORDI/USDT:USDT', '1000SATS/USDT:USDT', 'MANTA/USDT:USDT', 'ALT/USDT:USDT', 'XAI/USDT:USDT', 'AI/USDT:USDT', 'PYTH/USDT:USDT', 'ACE/USDT:USDT', 'NFP/USDT:USDT', 'JTO/USDT:USDT', '1000RATS/USDT:USDT', 'RONIN/USDT:USDT', 'JUP/USDT:USDT', 'CAKE/USDT:USDT', 'ID/USDT:USDT', 'ENA/USDT:USDT', 'WIF/USDT:USDT']
+2024-05-29 11:49:23,445 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-05-29 11:49:23,445 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): highThr = 0.95
+2024-05-29 11:49:23,445 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): lowThr = 1.05
+2024-05-29 11:49:23,445 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): period = 48
+2024-05-29 11:49:23,445 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-05-29 11:49:23,446 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-05-29 11:49:23,446 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2024-05-29 11:49:23,446 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2024-05-29 11:49:23,446 - freqtrade.worker - INFO - Changing state to: RUNNING
+2024-05-29 11:49:23,446 - freqtrade.util.migrations.binance_mig - WARNING - Migrating binance futures pairs in database.
+2024-05-29 11:49:23,449 - freqtrade.util.migrations.binance_mig - WARNING - Done migrating binance futures pairs in database.
+2024-05-29 11:49:23,455 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2024-05-29 11:49:23,455 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'0': 10000}`\n*Stoploss:* `-1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2024-05-29 11:49:23,455 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68899.9
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3857.6
+XRP/USDT:USDT---最高价0.5298---最低价0.5253---当前价0.5295
+ADA/USDT:USDT---最高价0.4622---最低价0.4573---当前价0.4619
+DOGE/USDT:USDT---最高价0.16966---最低价0.165---当前价0.16964
+SOL/USDT:USDT---最高价172.689---最低价167.507---当前价172.061
+TRX/USDT:USDT---最高价0.11166---最低价0.11091---当前价0.11164
+MATIC/USDT:USDT---最高价0.7342---最低价0.7194---当前价0.7299
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.395
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.95
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028998
+BCH/USDT:USDT---最高价474.67---最低价467.31---当前价474.03
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.288
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.10878
+LINK/USDT:USDT---最高价18.602---最低价18.263---当前价18.307
+XMR/USDT:USDT---最高价142.5---最低价141.26---当前价142.18
+UNI/USDT:USDT---最高价11.292---最低价10.879---当前价11.266
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.714
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.433
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10502
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.169
+FIL/USDT:USDT---最高价5.959---最低价5.885---当前价5.948
+LDO/USDT:USDT---最高价2.3635---最低价2.3133---当前价2.3216
+APT/USDT:USDT---最高价9.402---最低价9.23---当前价9.366
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.5
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.1959
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.035827
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2736.0
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5601
+NEAR/USDT:USDT---最高价7.786---最低价7.62---当前价7.755
+AAVE/USDT:USDT---最高价107.04---最低价105.01---当前价106.32
+GRT/USDT:USDT---最高价0.31898---最低价0.31232---当前价0.3179
+ALGO/USDT:USDT---最高价0.1948---最低价0.1911---当前价0.1938
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0032
+XTZ/USDT:USDT---最高价0.975---最低价0.961---当前价0.969
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.817
+EGLD/USDT:USDT---最高价40.23---最低价39.55---当前价40.16
+AXS/USDT:USDT---最高价7.78---最低价7.645---当前价7.766
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.4521
+THETA/USDT:USDT---最高价2.2833---最低价2.2526---当前价2.279
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.3067
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价3.003
+INJ/USDT:USDT---最高价26.533---最低价26.002---当前价26.396
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.8309
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.4591
+NEO/USDT:USDT---最高价15.39---最低价15.18---当前价15.352
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.736
+RNDR/USDT:USDT---最高价10.4633---最低价10.1913---当前价10.4084
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3244
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.6865
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.942
+1000XEC/USDT:USDT---最高价0.04943---最低价0.04825---当前价0.04943
+CHZ/USDT:USDT---最高价0.15519---最低价0.14774---当前价0.15115
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.1933
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22253
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.4658
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.76
+SUI/USDT:USDT---最高价1.0391---最低价1.0209---当前价1.0391
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.492
+GALA/USDT:USDT---最高价0.04607---最低价0.04501---当前价0.04542
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8489
+1000LUNC/USDT:USDT---最高价0.11874---最低价0.11457---当前价0.11817
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.082
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0159964---当前价0.0165518
+COMP/USDT:USDT---最高价62.69---最低价61.84---当前价62.58
+SFP/USDT:USDT---最高价0.8214---最低价0.8128---当前价0.8202
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.19
+ASTR/USDT:USDT---最高价0.09079---最低价0.08911---当前价0.08956
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.508
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34874
+AR/USDT:USDT---最高价38.191---最低价36.8---当前价38.034
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.09279
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02498
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4593
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.247
+LRC/USDT:USDT---最高价0.2906---最低价0.2845---当前价0.2857
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3649
+AGIX/USDT:USDT---最高价0.942---最低价0.9287---当前价0.9395
+QTUM/USDT:USDT---最高价3.751---最低价3.705---当前价3.744
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.968
+SEI/USDT:USDT---最高价0.5434---最低价0.5294---当前价0.5414
+CELO/USDT:USDT---最高价0.884---最低价0.865---当前价0.872
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0386
+MASK/USDT:USDT---最高价3.56---最低价3.504---当前价3.537
+LPT/USDT:USDT---最高价22.28---最低价21.384---当前价21.968
+FET/USDT:USDT---最高价2.2535---最低价2.2237---当前价2.2492
+OCEAN/USDT:USDT---最高价0.9455---最低价0.9328---当前价0.9439
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02964
+ANKR/USDT:USDT---最高价0.04532---最低价0.04474---当前价0.04513
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025952
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002523
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7192.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.021
+GMT/USDT:USDT---最高价0.2397---最低价0.2356---当前价0.2374
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4309
+WAVES/USDT:USDT---最高价2.4476---最低价2.4118---当前价2.4435
+KSM/USDT:USDT---最高价32.33---最低价31.86---当前价32.16
+1000FLOKI/USDT:USDT---最高价0.3035---最低价0.2878---当前价0.30254
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2297
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03652
+LUNA2/USDT:USDT---最高价0.6216---最低价0.6029---当前价0.6201
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5491
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3551
+ONT/USDT:USDT---最高价0.3135---最低价0.3091---当前价0.313
+PENDLE/USDT:USDT---最高价6.6682---最低价6.481---当前价6.4985
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.7568
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.269
+WLD/USDT:USDT---最高价4.7848---最低价4.656---当前价4.7804
+SUSHI/USDT:USDT---最高价1.2488---最低价1.2277---当前价1.2434
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.05503
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.00897
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.02332
+MAGIC/USDT:USDT---最高价0.8216---最低价0.8092---当前价0.8161
+CKB/USDT:USDT---最高价0.016913---最低价0.016562---当前价0.016603
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.4991
+ZEN/USDT:USDT---最高价9.832---最低价9.685---当前价9.809
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08466
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.437
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.08534
+2024-05-29 11:50:01,130 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.2067---当前价0.2119
+LQTY/USDT:USDT---最高价1.1683---最低价1.14---当前价1.1483
+STORJ/USDT:USDT---最高价0.5738---最低价0.5641---当前价0.5687
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.156
+MEME/USDT:USDT---最高价0.03256---最低价0.031294---当前价0.032482
+TIA/USDT:USDT---最高价11.7422---最低价11.081---当前价11.3714
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.779
+1000SATS/USDT:USDT---最高价0.0003238---最低价0.0003114---当前价0.000323
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8276
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34756
+XAI/USDT:USDT---最高价0.7805---最低价0.7602---当前价0.7648
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12178
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4374
+ACE/USDT:USDT---最高价5.7752---最低价5.627---当前价5.6464
+NFP/USDT:USDT---最高价0.5474---最低价0.5286---当前价0.5292
+JTO/USDT:USDT---最高价3.7708---最低价3.5914---当前价3.7505
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15448
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.1826
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.1839
+CAKE/USDT:USDT---最高价2.974---最低价2.9442---当前价2.9595
+ID/USDT:USDT---最高价0.74336---最低价0.73439---当前价0.74179
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8938
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0454
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68896.3
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3855.97
+XRP/USDT:USDT---最高价0.5298---最低价0.5253---当前价0.5294
+ADA/USDT:USDT---最高价0.4622---最低价0.4573---当前价0.4613
+DOGE/USDT:USDT---最高价0.17105---最低价0.165---当前价0.17017
+SOL/USDT:USDT---最高价172.689---最低价167.507---当前价172.472
+TRX/USDT:USDT---最高价0.11166---最低价0.11091---当前价0.11161
+MATIC/USDT:USDT---最高价0.7342---最低价0.7194---当前价0.7301
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.403
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.93
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028735
+BCH/USDT:USDT---最高价474.67---最低价467.31---当前价474.23
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.314
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.1086
+LINK/USDT:USDT---最高价18.602---最低价18.263---当前价18.402
+XMR/USDT:USDT---最高价142.5---最低价141.26---当前价142.46
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.311
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.718
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.426
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10487
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.164
+FIL/USDT:USDT---最高价5.965---最低价5.885---当前价5.961
+APT/USDT:USDT---最高价9.402---最低价9.23---当前价9.376
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2730.7
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5572
+NEAR/USDT:USDT---最高价7.786---最低价7.62---当前价7.777
+GRT/USDT:USDT---最高价0.31898---最低价0.31232---当前价0.31801
+ALGO/USDT:USDT---最高价0.1947---最低价0.1911---当前价0.1933
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0045
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.816
+EGLD/USDT:USDT---最高价40.23---最低价39.55---当前价40.17
+AXS/USDT:USDT---最高价7.781---最低价7.645---当前价7.777
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.452
+THETA/USDT:USDT---最高价2.2833---最低价2.2526---当前价2.279
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.3042
+INJ/USDT:USDT---最高价26.533---最低价26.002---当前价26.465
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.8313
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.459
+NEO/USDT:USDT---最高价15.39---最低价15.18---当前价15.365
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.742
+RNDR/USDT:USDT---最高价10.4633---最低价10.1913---当前价10.4272
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3233
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.6862
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.941
+1000XEC/USDT:USDT---最高价0.04947---最低价0.04825---当前价0.04938
+CHZ/USDT:USDT---最高价0.15519---最低价0.14774---当前价0.15077
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.1932
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22267
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.4708
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.75
+SUI/USDT:USDT---最高价1.0399---最低价1.0209---当前价1.039
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.492
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8467
+1000LUNC/USDT:USDT---最高价0.11874---最低价0.11457---当前价0.11761
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.079
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.015997---当前价0.0164968
+COMP/USDT:USDT---最高价62.69---最低价61.84---当前价62.65
+SFP/USDT:USDT---最高价0.8214---最低价0.8128---当前价0.8193
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.15
+ASTR/USDT:USDT---最高价0.09079---最低价0.08911---当前价0.08958
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.461
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34804
+AR/USDT:USDT---最高价38.191---最低价36.8---当前价38.11
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.09282
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02495
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4619
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2468
+LRC/USDT:USDT---最高价0.2906---最低价0.2845---当前价0.2862
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3648
+AGIX/USDT:USDT---最高价0.942---最低价0.9287---当前价0.9416
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.003
+SEI/USDT:USDT---最高价0.5434---最低价0.5294---当前价0.542
+CELO/USDT:USDT---最高价0.884---最低价0.865---当前价0.871
+MASK/USDT:USDT---最高价3.56---最低价3.504---当前价3.557
+LPT/USDT:USDT---最高价22.28---最低价21.384---当前价22.158
+FET/USDT:USDT---最高价2.2542---最低价2.2237---当前价2.2531
+OCEAN/USDT:USDT---最高价0.9455---最低价0.9328---当前价0.9453
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02964
+ANKR/USDT:USDT---最高价0.04532---最低价0.04474---当前价0.04516
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025802
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002524
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7189.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.028
+GMT/USDT:USDT---最高价0.2397---最低价0.2356---当前价0.2371
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4291
+WAVES/USDT:USDT---最高价2.4476---最低价2.4118---当前价2.447
+1000FLOKI/USDT:USDT---最高价0.3035---最低价0.2878---当前价0.3004
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2296
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03654
+LUNA2/USDT:USDT---最高价0.6216---最低价0.6029---当前价0.6202
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5493
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3551
+ONT/USDT:USDT---最高价0.3135---最低价0.3091---当前价0.3132
+PENDLE/USDT:USDT---最高价6.6682---最低价6.481---当前价6.486
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.7539
+2024-05-29 11:51:04,579 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:52:04,580 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:53:04,582 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:54:04,583 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.162
+WLD/USDT:USDT---最高价4.791---最低价4.656---当前价4.7823
+SUSHI/USDT:USDT---最高价1.2488---最低价1.2277---当前价1.2424
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.05499
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.02331
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8147
+CKB/USDT:USDT---最高价0.016913---最低价0.016562---当前价0.016578
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.4983
+ZEN/USDT:USDT---最高价9.832---最低价9.685---当前价9.791
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08475
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.432
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.08532
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.2067---当前价0.2107
+LQTY/USDT:USDT---最高价1.1683---最低价1.14---当前价1.1462
+STORJ/USDT:USDT---最高价0.5738---最低价0.5641---当前价0.5682
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.155
+MEME/USDT:USDT---最高价0.032679---最低价0.031294---当前价0.032519
+TIA/USDT:USDT---最高价11.7246---最低价11.081---当前价11.3821
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.000324
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34708
+XAI/USDT:USDT---最高价0.7805---最低价0.7602---当前价0.7639
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12142
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4365
+ACE/USDT:USDT---最高价5.7752---最低价5.627---当前价5.6425
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5284
+JTO/USDT:USDT---最高价3.7708---最低价3.5914---当前价3.7568
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15435
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.1872
+CAKE/USDT:USDT---最高价2.974---最低价2.9442---当前价2.9511
+ID/USDT:USDT---最高价0.74308---最低价0.73439---当前价0.74173
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0032
+LDO/USDT:USDT---最高价2.3635---最低价2.3133---当前价2.3203
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.39
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.195
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.035872
+AAVE/USDT:USDT---最高价107.04---最低价105.01---当前价106.15
+XTZ/USDT:USDT---最高价0.974---最低价0.961---当前价0.968
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价2.997
+GALA/USDT:USDT---最高价0.04607---最低价0.04501---当前价0.04531
+QTUM/USDT:USDT---最高价3.751---最低价3.705---当前价3.742
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0386
+KSM/USDT:USDT---最高价32.33---最低价31.86---当前价32.18
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.008966
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.713
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8292
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.1804
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8945
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68893.2
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3855.54
+XRP/USDT:USDT---最高价0.5298---最低价0.5253---当前价0.5295
+ADA/USDT:USDT---最高价0.4622---最低价0.4573---当前价0.4611
+DOGE/USDT:USDT---最高价0.17114---最低价0.165---当前价0.17017
+SOL/USDT:USDT---最高价172.689---最低价167.507---当前价172.034
+TRX/USDT:USDT---最高价0.11166---最低价0.11091---当前价0.11157
+MATIC/USDT:USDT---最高价0.7342---最低价0.7194---当前价0.7295
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.395
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.87
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028602
+BCH/USDT:USDT---最高价474.67---最低价467.31---当前价474.12
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.275
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.1086
+LINK/USDT:USDT---最高价18.602---最低价18.263---当前价18.352
+XMR/USDT:USDT---最高价142.5---最低价141.26---当前价142.38
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.268
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.701
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.443
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10494
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.155
+FIL/USDT:USDT---最高价5.966---最低价5.885---当前价5.962
+APT/USDT:USDT---最高价9.402---最低价9.23---当前价9.367
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.1941
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2730.4
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5565
+NEAR/USDT:USDT---最高价7.788---最低价7.62---当前价7.773
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价106.06
+GRT/USDT:USDT---最高价0.31898---最低价0.31232---当前价0.31815
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.1932
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0048
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.816
+EGLD/USDT:USDT---最高价40.23---最低价39.55---当前价40.18
+AXS/USDT:USDT---最高价7.781---最低价7.645---当前价7.773
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.4514
+THETA/USDT:USDT---最高价2.2833---最低价2.2526---当前价2.2806
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.2999
+INJ/USDT:USDT---最高价26.533---最低价26.002---当前价26.414
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.8308
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.4584
+NEO/USDT:USDT---最高价15.39---最低价15.18---当前价15.368
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.737
+RNDR/USDT:USDT---最高价10.4633---最低价10.1913---当前价10.4276
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3208
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.6861
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.94
+1000XEC/USDT:USDT---最高价0.04947---最低价0.04828---当前价0.04933
+CHZ/USDT:USDT---最高价0.15519---最低价0.14774---当前价0.151
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.1932
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.2221
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.4623
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.75
+SUI/USDT:USDT---最高价1.0399---最低价1.0209---当前价1.037
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.49
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8452
+1000LUNC/USDT:USDT---最高价0.11874---最低价0.11457---当前价0.11717
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.079
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160062---当前价0.0164333
+COMP/USDT:USDT---最高价62.74---最低价61.84---当前价62.52
+SFP/USDT:USDT---最高价0.8214---最低价0.8128---当前价0.8194
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.16
+ASTR/USDT:USDT---最高价0.09079---最低价0.08911---当前价0.08955
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.4
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.3478
+AR/USDT:USDT---最高价38.191---最低价36.8---当前价37.996
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.09261
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02493
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4612
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2467
+LRC/USDT:USDT---最高价0.2903---最低价0.2845---当前价0.2863
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3647
+AGIX/USDT:USDT---最高价0.942---最低价0.9287---当前价0.9405
+2024-05-29 11:55:39,372 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:56:39,373 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:57:39,375 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:58:39,376 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 11:59:39,378 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.881
+SEI/USDT:USDT---最高价0.5434---最低价0.5294---当前价0.5404
+CELO/USDT:USDT---最高价0.884---最低价0.865---当前价0.871
+MASK/USDT:USDT---最高价3.564---最低价3.504---当前价3.556
+LPT/USDT:USDT---最高价22.28---最低价21.384---当前价22.156
+FET/USDT:USDT---最高价2.2542---最低价2.2237---当前价2.2507
+OCEAN/USDT:USDT---最高价0.9456---最低价0.9328---当前价0.9446
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02964
+ANKR/USDT:USDT---最高价0.04532---最低价0.04474---当前价0.04516
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025723
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002518
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7187.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.021
+GMT/USDT:USDT---最高价0.2397---最低价0.2356---当前价0.237
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4288
+WAVES/USDT:USDT---最高价2.4476---最低价2.4118---当前价2.4451
+KSM/USDT:USDT---最高价32.33---最低价31.86---当前价32.18
+1000FLOKI/USDT:USDT---最高价0.3035---最低价0.2878---当前价0.29971
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2295
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03652
+LUNA2/USDT:USDT---最高价0.6216---最低价0.6029---当前价0.6179
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5487
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3548
+ONT/USDT:USDT---最高价0.314---最低价0.3091---当前价0.3139
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4717---当前价6.4949
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.751
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.168
+WLD/USDT:USDT---最高价4.791---最低价4.656---当前价4.7844
+SUSHI/USDT:USDT---最高价1.2488---最低价1.2277---当前价1.2387
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.05488
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.0233
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8136
+CKB/USDT:USDT---最高价0.016913---最低价0.016535---当前价0.01658
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.4985
+ZEN/USDT:USDT---最高价9.832---最低价9.685---当前价9.788
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08471
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.429
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.08521
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.2071---当前价0.2102
+LQTY/USDT:USDT---最高价1.1683---最低价1.14---当前价1.1459
+STORJ/USDT:USDT---最高价0.5738---最低价0.5641---当前价0.5684
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.146
+MEME/USDT:USDT---最高价0.032679---最低价0.031294---当前价0.032367
+TIA/USDT:USDT---最高价11.7246---最低价11.081---当前价11.35
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.653
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003221
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8208
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.3471
+XAI/USDT:USDT---最高价0.7805---最低价0.7602---当前价0.7629
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12035
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4358
+ACE/USDT:USDT---最高价5.7752---最低价5.622---当前价5.6241
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.528
+JTO/USDT:USDT---最高价3.7708---最低价3.5914---当前价3.7428
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15368
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.184
+CAKE/USDT:USDT---最高价2.974---最低价2.9442---当前价2.9514
+ID/USDT:USDT---最高价0.74275---最低价0.73439---当前价0.74129
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0058
+LDO/USDT:USDT---最高价2.3635---最低价2.3133---当前价2.3166
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.41
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.035837
+XTZ/USDT:USDT---最高价0.974---最低价0.961---当前价0.967
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价2.991
+GALA/USDT:USDT---最高价0.04607---最低价0.04501---当前价0.04531
+QTUM/USDT:USDT---最高价3.751---最低价3.705---当前价3.743
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0386
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.008959
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.1793
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8932
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68862.1
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3853.7
+XRP/USDT:USDT---最高价0.5298---最低价0.5253---当前价0.5292
+ADA/USDT:USDT---最高价0.4622---最低价0.4573---当前价0.4615
+DOGE/USDT:USDT---最高价0.17114---最低价0.165---当前价0.17001
+SOL/USDT:USDT---最高价172.689---最低价167.507---当前价172.458
+TRX/USDT:USDT---最高价0.11166---最低价0.11091---当前价0.1116
+MATIC/USDT:USDT---最高价0.7342---最低价0.7194---当前价0.7292
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.8
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028624
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.6
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.282
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.10863
+LINK/USDT:USDT---最高价18.602---最低价18.263---当前价18.326
+XMR/USDT:USDT---最高价142.51---最低价141.26---当前价142.51
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.234
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.693
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.436
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10494
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.146
+FIL/USDT:USDT---最高价5.966---最低价5.885---当前价5.96
+APT/USDT:USDT---最高价9.402---最低价9.23---当前价9.365
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.1944
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2728.5
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5553
+NEAR/USDT:USDT---最高价7.788---最低价7.62---当前价7.773
+GRT/USDT:USDT---最高价0.31898---最低价0.31232---当前价0.31845
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.1932
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0055
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.814
+EGLD/USDT:USDT---最高价40.23---最低价39.55---当前价40.16
+AXS/USDT:USDT---最高价7.781---最低价7.645---当前价7.774
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.4514
+THETA/USDT:USDT---最高价2.2833---最低价2.2526---当前价2.2808
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.3037
+INJ/USDT:USDT---最高价26.533---最低价26.002---当前价26.471
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.8301
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.4581
+NEO/USDT:USDT---最高价15.39---最低价15.18---当前价15.356
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.747
+RNDR/USDT:USDT---最高价10.4633---最低价10.1913---当前价10.4415
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3202
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.6858
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.939
+1000XEC/USDT:USDT---最高价0.04947---最低价0.04829---当前价0.04939
+CHZ/USDT:USDT---最高价0.15519---最低价0.14774---当前价0.15136
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.193
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22238
+2024-05-29 12:00:44,353 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:01:04,624 - freqtrade.wallets - INFO - Wallets synced.
+2024-05-29 12:01:44,355 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:02:44,357 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:03:44,358 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:04:44,360 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.4628
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.75
+SUI/USDT:USDT---最高价1.0399---最低价1.0209---当前价1.0357
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.489
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8456
+1000LUNC/USDT:USDT---最高价0.11874---最低价0.11457---当前价0.11806
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.077
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160073---当前价0.0163799
+COMP/USDT:USDT---最高价62.74---最低价61.84---当前价62.39
+SFP/USDT:USDT---最高价0.8214---最低价0.8128---当前价0.8191
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.15
+ASTR/USDT:USDT---最高价0.09079---最低价0.08911---当前价0.08954
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.338
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34744
+AR/USDT:USDT---最高价38.191---最低价36.8---当前价38.097
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.09265
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02491
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4618
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2466
+LRC/USDT:USDT---最高价0.2903---最低价0.2845---当前价0.2865
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3647
+AGIX/USDT:USDT---最高价0.942---最低价0.9287---当前价0.9412
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.846
+SEI/USDT:USDT---最高价0.5434---最低价0.5294---当前价0.5396
+CELO/USDT:USDT---最高价0.884---最低价0.865---当前价0.87
+MASK/USDT:USDT---最高价3.564---最低价3.504---当前价3.551
+LPT/USDT:USDT---最高价22.4---最低价21.384---当前价22.36
+FET/USDT:USDT---最高价2.2542---最低价2.2237---当前价2.2517
+OCEAN/USDT:USDT---最高价0.9456---最低价0.9328---当前价0.9453
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02961
+ANKR/USDT:USDT---最高价0.04532---最低价0.04474---当前价0.04517
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025766
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002522
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7191.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.022
+GMT/USDT:USDT---最高价0.2397---最低价0.2356---当前价0.2374
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4288
+WAVES/USDT:USDT---最高价2.4476---最低价2.4118---当前价2.4439
+1000FLOKI/USDT:USDT---最高价0.3035---最低价0.2878---当前价0.30182
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2292
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03649
+LUNA2/USDT:USDT---最高价0.6216---最低价0.6029---当前价0.6194
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5485
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3546
+ONT/USDT:USDT---最高价0.314---最低价0.3091---当前价0.3136
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4605---当前价6.4803
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.7484
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.152
+WLD/USDT:USDT---最高价4.8072---最低价4.656---当前价4.7998
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.05503
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.008959
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.02329
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8137
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016582
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.4986
+ZEN/USDT:USDT---最高价9.832---最低价9.685---当前价9.778
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08469
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.428
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.08524
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.2074---当前价0.2095
+LQTY/USDT:USDT---最高价1.1683---最低价1.14---当前价1.1444
+STORJ/USDT:USDT---最高价0.5738---最低价0.5641---当前价0.5699
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.142
+MEME/USDT:USDT---最高价0.032679---最低价0.031294---当前价0.032442
+TIA/USDT:USDT---最高价11.7246---最低价11.081---当前价11.3554
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.594
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003214
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34743
+XAI/USDT:USDT---最高价0.7805---最低价0.7602---当前价0.7617
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12187
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4353
+ACE/USDT:USDT---最高价5.7752---最低价5.6152---当前价5.624
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5314
+JTO/USDT:USDT---最高价3.7708---最低价3.5914---当前价3.7628
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15339
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.1845
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9464
+ID/USDT:USDT---最高价0.74275---最低价0.73439---当前价0.74103
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0192
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.393
+LDO/USDT:USDT---最高价2.3635---最低价2.3119---当前价2.3181
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.32
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.03585
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价106.02
+XTZ/USDT:USDT---最高价0.974---最低价0.961---当前价0.968
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价2.989
+GALA/USDT:USDT---最高价0.04607---最低价0.04501---当前价0.04531
+QTUM/USDT:USDT---最高价3.751---最低价3.705---当前价3.743
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0385
+KSM/USDT:USDT---最高价32.33---最低价31.86---当前价32.17
+SUSHI/USDT:USDT---最高价1.2488---最低价1.2277---当前价1.2384
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8257
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.179
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8931
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68832.3
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3853.26
+XRP/USDT:USDT---最高价0.5298---最低价0.5253---当前价0.5288
+ADA/USDT:USDT---最高价0.4622---最低价0.4573---当前价0.4618
+DOGE/USDT:USDT---最高价0.17114---最低价0.165---当前价0.17035
+SOL/USDT:USDT---最高价172.689---最低价167.507---当前价172.151
+TRX/USDT:USDT---最高价0.11166---最低价0.11091---当前价0.11159
+MATIC/USDT:USDT---最高价0.7339---最低价0.7194---当前价0.7299
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.88
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028847
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.06
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.283
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.10857
+LINK/USDT:USDT---最高价18.584---最低价18.263---当前价18.343
+XMR/USDT:USDT---最高价142.56---最低价141.26---当前价142.37
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.206
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.708
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.448
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10505
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.162
+FIL/USDT:USDT---最高价5.977---最低价5.885---当前价5.974
+APT/USDT:USDT---最高价9.402---最低价9.23---当前价9.396
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.1952
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2733.6
+2024-05-29 12:05:44,806 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:06:44,808 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:07:44,809 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:08:44,811 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:09:44,812 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5607
+NEAR/USDT:USDT---最高价7.788---最低价7.62---当前价7.785
+GRT/USDT:USDT---最高价0.3195---最低价0.31232---当前价0.31941
+ALGO/USDT:USDT---最高价0.1943---最低价0.1911---当前价0.1932
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0054
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.816
+EGLD/USDT:USDT---最高价40.23---最低价39.55---当前价40.2
+AXS/USDT:USDT---最高价7.802---最低价7.645---当前价7.796
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.4518
+THETA/USDT:USDT---最高价2.29---最低价2.2526---当前价2.2885
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.3058
+INJ/USDT:USDT---最高价26.55---最低价26.002---当前价26.521
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.831
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.4577
+NEO/USDT:USDT---最高价15.391---最低价15.18---当前价15.385
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.744
+RNDR/USDT:USDT---最高价10.467---最低价10.1913---当前价10.4624
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3234
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.686
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.94
+1000XEC/USDT:USDT---最高价0.04949---最低价0.04833---当前价0.04946
+CHZ/USDT:USDT---最高价0.15519---最低价0.14774---当前价0.15194
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.193
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22233
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.466
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.71
+SUI/USDT:USDT---最高价1.0399---最低价1.0209---当前价1.0384
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.49
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8473
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11874
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.081
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0162834
+COMP/USDT:USDT---最高价62.74---最低价61.84---当前价62.44
+SFP/USDT:USDT---最高价0.8214---最低价0.8128---当前价0.8206
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.16
+ASTR/USDT:USDT---最高价0.09079---最低价0.08911---当前价0.08975
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.409
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34751
+AR/USDT:USDT---最高价38.2---最低价36.8---当前价38.159
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.0927
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02489
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4611
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2465
+LRC/USDT:USDT---最高价0.2903---最低价0.2845---当前价0.2875
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3648
+AGIX/USDT:USDT---最高价0.9453---最低价0.9287---当前价0.945
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.876
+SEI/USDT:USDT---最高价0.5434---最低价0.5294---当前价0.5412
+CELO/USDT:USDT---最高价0.884---最低价0.865---当前价0.873
+MASK/USDT:USDT---最高价3.575---最低价3.504---当前价3.569
+LPT/USDT:USDT---最高价22.403---最低价21.384---当前价22.34
+FET/USDT:USDT---最高价2.2639---最低价2.2237---当前价2.2626
+OCEAN/USDT:USDT---最高价0.9493---最低价0.9328---当前价0.9488
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02963
+ANKR/USDT:USDT---最高价0.04532---最低价0.04474---当前价0.04512
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025894
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002521
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7186.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.03
+GMT/USDT:USDT---最高价0.2397---最低价0.2356---当前价0.2381
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4285
+WAVES/USDT:USDT---最高价2.4476---最低价2.4118---当前价2.4452
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30358
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2293
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03656
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6223
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5485
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3549
+ONT/USDT:USDT---最高价0.3147---最低价0.3091---当前价0.3142
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4605---当前价6.4893
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.7534
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.235
+WLD/USDT:USDT---最高价4.815---最低价4.656---当前价4.8107
+SUSHI/USDT:USDT---最高价1.2488---最低价1.2277---当前价1.2388
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.0551
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.0233
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8145
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016598
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.4993
+ZEN/USDT:USDT---最高价9.832---最低价9.685---当前价9.8
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.0849
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.426
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.08526
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2099
+LQTY/USDT:USDT---最高价1.1679---最低价1.14---当前价1.1445
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5694
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.164
+MEME/USDT:USDT---最高价0.032835---最低价0.031294---当前价0.0327
+TIA/USDT:USDT---最高价11.7246---最低价11.081---当前价11.38
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.526
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003208
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8265
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34727
+XAI/USDT:USDT---最高价0.7805---最低价0.7591---当前价0.7624
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12712
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4362
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6386
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5421
+JTO/USDT:USDT---最高价3.7932---最低价3.5914---当前价3.7821
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15365
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.1817
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9527
+ID/USDT:USDT---最高价0.74275---最低价0.73439---当前价0.7421
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0514
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.389
+LDO/USDT:USDT---最高价2.3619---最低价2.3119---当前价2.3224
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.39
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.035823
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价105.97
+XTZ/USDT:USDT---最高价0.974---最低价0.961---当前价0.97
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价2.996
+GALA/USDT:USDT---最高价0.04607---最低价0.04501---当前价0.04538
+QTUM/USDT:USDT---最高价3.751---最低价3.705---当前价3.748
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0386
+KSM/USDT:USDT---最高价32.32---最低价31.86---当前价32.23
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.008963
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.1936
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8941
+BTC/USDT:USDT---最高价68983.0---最低价68302.8---当前价68829.9
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3856.37
+XRP/USDT:USDT---最高价0.5297---最低价0.5253---当前价0.529
+ADA/USDT:USDT---最高价0.4625---最低价0.4573---当前价0.4623
+DOGE/USDT:USDT---最高价0.17114---最低价0.165---当前价0.17012
+SOL/USDT:USDT---最高价172.869---最低价167.507---当前价172.825
+TRX/USDT:USDT---最高价0.11168---最低价0.11105---当前价0.11167
+MATIC/USDT:USDT---最高价0.7339---最低价0.7194---当前价0.7308
+DOT/USDT:USDT---最高价7.414---最低价7.311---当前价7.399
+LTC/USDT:USDT---最高价84.03---最低价83.23---当前价83.92
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026565---当前价0.028816
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.01
+AVAX/USDT:USDT---最高价37.431---最低价36.713---当前价37.324
+XLM/USDT:USDT---最高价0.10883---最低价0.10754---当前价0.10867
+LINK/USDT:USDT---最高价18.584---最低价18.263---当前价18.388
+XMR/USDT:USDT---最高价142.56---最低价141.26---当前价142.34
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.2
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.73
+ETC/USDT:USDT---最高价31.571---最低价31.076---当前价31.452
+HBAR/USDT:USDT---最高价0.10533---最低价0.10391---当前价0.10527
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.2
+FIL/USDT:USDT---最高价5.984---最低价5.885---当前价5.982
+LDO/USDT:USDT---最高价2.3619---最低价2.3119---当前价2.3266
+APT/USDT:USDT---最高价9.414---最低价9.23---当前价9.414
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.42
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.1975
+VET/USDT:USDT---最高价0.035951---最低价0.035519---当前价0.035876
+MKR/USDT:USDT---最高价2741.8---最低价2708.4---当前价2738.2
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5614
+NEAR/USDT:USDT---最高价7.796---最低价7.62---当前价7.796
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价105.98
+GRT/USDT:USDT---最高价0.32029---最低价0.31232---当前价0.32014
+ALGO/USDT:USDT---最高价0.1943---最低价0.1911---当前价0.1938
+STX/USDT:USDT---最高价2.011---最低价1.9719---当前价2.0098
+XTZ/USDT:USDT---最高价0.974---最低价0.961---当前价0.972
+EOS/USDT:USDT---最高价0.819---最低价0.807---当前价0.818
+EGLD/USDT:USDT---最高价40.29---最低价39.55---当前价40.27
+AXS/USDT:USDT---最高价7.808---最低价7.645---当前价7.805
+SAND/USDT:USDT---最高价0.4527---最低价0.4461---当前价0.4524
+THETA/USDT:USDT---最高价2.2923---最低价2.2526---当前价2.2913
+IMX/USDT:USDT---最高价2.3119---最低价2.2811---当前价2.3069
+INJ/USDT:USDT---最高价26.55---最低价26.002---当前价26.536
+FTM/USDT:USDT---最高价0.8348---最低价0.8229---当前价0.8325
+MANA/USDT:USDT---最高价0.4599---最低价0.4495---当前价0.4579
+NEO/USDT:USDT---最高价15.408---最低价15.18---当前价15.408
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.746
+RNDR/USDT:USDT---最高价10.4692---最低价10.1913---当前价10.4372
+APE/USDT:USDT---最高价1.3265---最低价1.3009---当前价1.3255
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.686
+FLOW/USDT:USDT---最高价0.944---最低价0.93---当前价0.942
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04833---当前价0.04948
+CHZ/USDT:USDT---最高价0.15487---最低价0.14774---当前价0.15177
+KLAY/USDT:USDT---最高价0.1936---最低价0.1903---当前价0.1934
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22225
+FXS/USDT:USDT---最高价4.4876---最低价4.4218---当前价4.4738
+ZEC/USDT:USDT---最高价26.81---最低价26.38---当前价26.78
+SUI/USDT:USDT---最高价1.0399---最低价1.0209---当前价1.0396
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.491
+GALA/USDT:USDT---最高价0.04592---最低价0.04501---当前价0.04528
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8483
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11808
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.085
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0162688
+COMP/USDT:USDT---最高价62.74---最低价61.84---当前价62.56
+SFP/USDT:USDT---最高价0.8224---最低价0.8128---当前价0.8222
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.2
+ASTR/USDT:USDT---最高价0.09061---最低价0.08911---当前价0.08974
+GMX/USDT:USDT---最高价34.63---最低价34.055---当前价34.516
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.3476
+AR/USDT:USDT---最高价38.234---最低价36.8---当前价38.218
+ROSE/USDT:USDT---最高价0.09294---最低价0.09145---当前价0.09283
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.02492
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4618
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2473
+LRC/USDT:USDT---最高价0.2901---最低价0.2845---当前价0.2877
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3649
+AGIX/USDT:USDT---最高价0.9459---最低价0.9287---当前价0.9443
+QTUM/USDT:USDT---最高价3.756---最低价3.705---当前价3.755
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.09
+SEI/USDT:USDT---最高价0.543---最低价0.5294---当前价0.5424
+CELO/USDT:USDT---最高价0.88---最低价0.865---当前价0.873
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0387
+MASK/USDT:USDT---最高价3.581---最低价3.504---当前价3.58
+LPT/USDT:USDT---最高价22.403---最低价21.384---当前价22.32
+FET/USDT:USDT---最高价2.2661---最低价2.2237---当前价2.2623
+OCEAN/USDT:USDT---最高价0.95---最低价0.9328---当前价0.949
+RVN/USDT:USDT---最高价0.02969---最低价0.02928---当前价0.02964
+ANKR/USDT:USDT---最高价0.0453---最低价0.04474---当前价0.04512
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025805
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002521
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7194.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.033
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.2381
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4299
+WAVES/USDT:USDT---最高价2.448---最低价2.4118---当前价2.448
+KSM/USDT:USDT---最高价32.3---最低价31.86---当前价32.3
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30099
+ICX/USDT:USDT---最高价0.2311---最低价0.2284---当前价0.2298
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03665
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6199
+ZRX/USDT:USDT---最高价0.5503---最低价0.5424---当前价0.5497
+SXP/USDT:USDT---最高价0.3564---最低价0.3516---当前价0.3556
+ONT/USDT:USDT---最高价0.3167---最低价0.3091---当前价0.3165
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4605---当前价6.504
+BAND/USDT:USDT---最高价1.7595---最低价1.7318---当前价1.7563
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.411
+WLD/USDT:USDT---最高价4.8274---最低价4.656---当前价4.8151
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2405
+IOTX/USDT:USDT---最高价0.05537---最低价0.05434---当前价0.05524
+IOST/USDT:USDT---最高价0.008987---最低价0.008887---当前价0.008987
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.02332
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8164
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016626
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.5002
+ZEN/USDT:USDT---最高价9.841---最低价9.685---当前价9.834
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08502
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.431
+LOOM/USDT:USDT---最高价0.08556---最低价0.08448---当前价0.0854
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2103
+LQTY/USDT:USDT---最高价1.1642---最低价1.14---当前价1.1468
+2024-05-29 12:10:48,658 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:11:48,660 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:12:48,661 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:13:48,663 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:14:48,665 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5697
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.19
+MEME/USDT:USDT---最高价0.032835---最低价0.031294---当前价0.032646
+TIA/USDT:USDT---最高价11.7148---最低价11.081---当前价11.4096
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.593
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003228
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8336
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34754
+XAI/USDT:USDT---最高价0.7805---最低价0.7591---当前价0.7645
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.12739
+PYTH/USDT:USDT---最高价0.4412---最低价0.4253---当前价0.4363
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6392
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5421
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.7957
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15465
+RONIN/USDT:USDT---最高价3.1986---最低价3.1651---当前价3.189
+JUP/USDT:USDT---最高价1.1911---最低价1.1452---当前价1.1884
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9554
+ID/USDT:USDT---最高价0.74275---最低价0.73439---当前价0.74204
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8961
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0425
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价2.996
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68857.8
+ETH/USDT:USDT---最高价3865.0---最低价3837.28---当前价3864.63
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5303
+ADA/USDT:USDT---最高价0.4628---最低价0.4573---当前价0.4627
+DOGE/USDT:USDT---最高价0.17114---最低价0.16521---当前价0.16986
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.863
+TRX/USDT:USDT---最高价0.11179---最低价0.11105---当前价0.11177
+MATIC/USDT:USDT---最高价0.7349---最低价0.7194---当前价0.7336
+LTC/USDT:USDT---最高价84.1---最低价83.23---当前价84.08
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026627---当前价0.028826
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.47
+AVAX/USDT:USDT---最高价37.458---最低价36.713---当前价37.407
+XLM/USDT:USDT---最高价0.10889---最低价0.10754---当前价0.10889
+LINK/USDT:USDT---最高价18.583---最低价18.263---当前价18.406
+XMR/USDT:USDT---最高价142.56---最低价141.26---当前价142.24
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.738
+ETC/USDT:USDT---最高价31.579---最低价31.076---当前价31.57
+HBAR/USDT:USDT---最高价0.10556---最低价0.10391---当前价0.10552
+ICP/USDT:USDT---最高价12.221---最低价12.017---当前价12.199
+FIL/USDT:USDT---最高价5.993---最低价5.885---当前价5.99
+APT/USDT:USDT---最高价9.45---最低价9.23---当前价9.436
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.73
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.2009
+MKR/USDT:USDT---最高价2742.0---最低价2708.4---当前价2741.6
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5695
+NEAR/USDT:USDT---最高价7.805---最低价7.62---当前价7.801
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价106.18
+GRT/USDT:USDT---最高价0.32124---最低价0.31232---当前价0.32093
+ALGO/USDT:USDT---最高价0.1943---最低价0.1911---当前价0.194
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.0111
+EOS/USDT:USDT---最高价0.82---最低价0.807---当前价0.819
+EGLD/USDT:USDT---最高价40.35---最低价39.55---当前价40.33
+AXS/USDT:USDT---最高价7.827---最低价7.645---当前价7.827
+SAND/USDT:USDT---最高价0.4548---最低价0.4461---当前价0.4545
+THETA/USDT:USDT---最高价2.2998---最低价2.2526---当前价2.2994
+IMX/USDT:USDT---最高价2.3158---最低价2.2811---当前价2.315
+INJ/USDT:USDT---最高价26.55---最低价26.002---当前价26.524
+FTM/USDT:USDT---最高价0.8349---最低价0.8229---当前价0.834
+MANA/USDT:USDT---最高价0.46---最低价0.4495---当前价0.4597
+NEO/USDT:USDT---最高价15.464---最低价15.18---当前价15.464
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.75
+RNDR/USDT:USDT---最高价10.494---最低价10.2055---当前价10.491
+APE/USDT:USDT---最高价1.3285---最低价1.3009---当前价1.3282
+KAVA/USDT:USDT---最高价0.6883---最低价0.6793---当前价0.6875
+FLOW/USDT:USDT---最高价0.945---最低价0.93---当前价0.945
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04833---当前价0.04949
+KLAY/USDT:USDT---最高价0.1939---最低价0.1903---当前价0.1939
+CFX/USDT:USDT---最高价0.22284---最低价0.2191---当前价0.22248
+FXS/USDT:USDT---最高价4.4912---最低价4.4218---当前价4.4884
+ZEC/USDT:USDT---最高价26.83---最低价26.38---当前价26.83
+SUI/USDT:USDT---最高价1.041---最低价1.0209---当前价1.0408
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.493
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8499
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11765
+DYDX/USDT:USDT---最高价2.092---最低价2.061---当前价2.09
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0162532
+COMP/USDT:USDT---最高价62.74---最低价61.84---当前价62.67
+SFP/USDT:USDT---最高价0.8233---最低价0.8128---当前价0.8229
+DASH/USDT:USDT---最高价30.26---最低价30.03---当前价30.23
+ASTR/USDT:USDT---最高价0.09061---最低价0.08911---当前价0.0899
+GMX/USDT:USDT---最高价34.68---最低价34.055---当前价34.604
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34825
+AR/USDT:USDT---最高价38.432---最低价36.8---当前价38.422
+ROSE/USDT:USDT---最高价0.09324---最低价0.09145---当前价0.09313
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.025
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4613
+BAT/USDT:USDT---最高价0.2477---最低价0.2451---当前价0.2475
+LRC/USDT:USDT---最高价0.2901---最低价0.2845---当前价0.2877
+ENJ/USDT:USDT---最高价0.367---最低价0.3616---当前价0.3662
+AGIX/USDT:USDT---最高价0.9503---最低价0.9287---当前价0.95
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.088
+SEI/USDT:USDT---最高价0.5435---最低价0.5294---当前价0.5433
+CELO/USDT:USDT---最高价0.878---最低价0.865---当前价0.878
+LPT/USDT:USDT---最高价22.407---最低价21.384---当前价22.397
+FET/USDT:USDT---最高价2.2782---最低价2.2237---当前价2.2762
+OCEAN/USDT:USDT---最高价0.954---最低价0.9328---当前价0.9538
+RVN/USDT:USDT---最高价0.0297---最低价0.02928---当前价0.0297
+ANKR/USDT:USDT---最高价0.0453---最低价0.04474---当前价0.04517
+JASMY/USDT:USDT---最高价0.02618---最低价0.025315---当前价0.025884
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.002524
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7203.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.04
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.239
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4318
+WAVES/USDT:USDT---最高价2.4515---最低价2.4118---当前价2.4512
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.3001
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.2299
+T/USDT:USDT---最高价0.03676---最低价0.03636---当前价0.03674
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6196
+ZRX/USDT:USDT---最高价0.5519---最低价0.5424---当前价0.5512
+SXP/USDT:USDT---最高价0.3566---最低价0.3516---当前价0.3566
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3178
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4605---当前价6.4878
+BAND/USDT:USDT---最高价1.7606---最低价1.7318---当前价1.7606
+SSV/USDT:USDT---最高价45.514---最低价44.455---当前价45.376
+WLD/USDT:USDT---最高价4.8418---最低价4.656---当前价4.84
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2422
+2024-05-29 12:15:49,602 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:16:49,603 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:17:49,605 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:18:49,607 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:19:24,640 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring CVX/USDT:USDT from whitelist. Market is not active.
+2024-05-29 12:19:49,608 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+IOTX/USDT:USDT---最高价0.05554---最低价0.05434---当前价0.05548
+IOST/USDT:USDT---最高价0.009002---最低价0.008887---当前价0.009001
+ONE/USDT:USDT---最高价0.0237---最低价0.02324---当前价0.02343
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8188
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016699
+STG/USDT:USDT---最高价0.505---最低价0.495---当前价0.5012
+ZEN/USDT:USDT---最高价9.87---最低价9.685---当前价9.86
+SKL/USDT:USDT---最高价0.08525---最低价0.08385---当前价0.08522
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.442
+LOOM/USDT:USDT---最高价0.08566---最低价0.08448---当前价0.08565
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2107
+LQTY/USDT:USDT---最高价1.163---最低价1.14---当前价1.1506
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5718
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.204
+MEME/USDT:USDT---最高价0.032871---最低价0.031294---当前价0.032658
+TIA/USDT:USDT---最高价11.6973---最低价11.081---当前价11.4199
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.582
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003216
+ALT/USDT:USDT---最高价0.3518---最低价0.34501---当前价0.34839
+XAI/USDT:USDT---最高价0.7805---最低价0.7591---当前价0.77
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.13211
+PYTH/USDT:USDT---最高价0.4392---最低价0.4253---当前价0.4376
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6472
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5435
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.8008
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.1542
+JUP/USDT:USDT---最高价1.1926---最低价1.1452---当前价1.1905
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9588
+ID/USDT:USDT---最高价0.74338---最低价0.73439---当前价0.74336
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0456
+DOT/USDT:USDT---最高价7.422---最低价7.311---当前价7.415
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.212
+LDO/USDT:USDT---最高价2.3619---最低价2.3119---当前价2.3322
+VET/USDT:USDT---最高价0.035967---最低价0.035519---当前价0.035957
+XTZ/USDT:USDT---最高价0.976---最低价0.961---当前价0.976
+SNX/USDT:USDT---最高价3.011---最低价2.959---当前价3.001
+CHZ/USDT:USDT---最高价0.1548---最低价0.14774---当前价0.15202
+GALA/USDT:USDT---最高价0.04588---最低价0.04501---当前价0.04545
+QTUM/USDT:USDT---最高价3.767---最低价3.705---当前价3.767
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0387
+MASK/USDT:USDT---最高价3.583---最低价3.504---当前价3.581
+KSM/USDT:USDT---最高价32.47---最低价31.86---当前价32.46
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8347
+RONIN/USDT:USDT---最高价3.1987---最低价3.1651---当前价3.1987
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8983
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68878.2
+ETH/USDT:USDT---最高价3877.0---最低价3837.28---当前价3872.07
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5301
+ADA/USDT:USDT---最高价0.4636---最低价0.4573---当前价0.4632
+DOGE/USDT:USDT---最高价0.17114---最低价0.16525---当前价0.16928
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.818
+TRX/USDT:USDT---最高价0.11185---最低价0.11105---当前价0.11184
+MATIC/USDT:USDT---最高价0.7349---最低价0.7194---当前价0.7342
+LTC/USDT:USDT---最高价84.13---最低价83.23---当前价84.1
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026867---当前价0.028795
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.15
+AVAX/USDT:USDT---最高价37.458---最低价36.713---当前价37.407
+XLM/USDT:USDT---最高价0.10899---最低价0.10754---当前价0.10894
+LINK/USDT:USDT---最高价18.568---最低价18.263---当前价18.449
+XMR/USDT:USDT---最高价142.56---最低价141.26---当前价142.33
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.24
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.717
+ETC/USDT:USDT---最高价31.601---最低价31.076---当前价31.576
+HBAR/USDT:USDT---最高价0.10556---最低价0.10391---当前价0.10541
+ICP/USDT:USDT---最高价12.225---最低价12.017---当前价12.215
+FIL/USDT:USDT---最高价5.994---最低价5.885---当前价5.989
+APT/USDT:USDT---最高价9.458---最低价9.23---当前价9.437
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.79
+ARB/USDT:USDT---最高价1.2118---最低价1.1852---当前价1.2014
+MKR/USDT:USDT---最高价2746.4---最低价2708.4---当前价2743.4
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5716
+NEAR/USDT:USDT---最高价7.824---最低价7.62---当前价7.814
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价106.36
+GRT/USDT:USDT---最高价0.32246---最低价0.31232---当前价0.32191
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.1943
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.0058
+EOS/USDT:USDT---最高价0.823---最低价0.807---当前价0.821
+EGLD/USDT:USDT---最高价40.42---最低价39.55---当前价40.41
+AXS/USDT:USDT---最高价7.851---最低价7.645---当前价7.841
+SAND/USDT:USDT---最高价0.4559---最低价0.4461---当前价0.4554
+THETA/USDT:USDT---最高价2.3058---最低价2.2526---当前价2.3026
+IMX/USDT:USDT---最高价2.3187---最低价2.2811---当前价2.3178
+INJ/USDT:USDT---最高价26.588---最低价26.002---当前价26.565
+FTM/USDT:USDT---最高价0.8355---最低价0.8229---当前价0.8348
+MANA/USDT:USDT---最高价0.4624---最低价0.4495---当前价0.462
+NEO/USDT:USDT---最高价15.487---最低价15.18---当前价15.471
+RUNE/USDT:USDT---最高价6.773---最低价6.661---当前价6.749
+RNDR/USDT:USDT---最高价10.5284---最低价10.2055---当前价10.5199
+APE/USDT:USDT---最高价1.3295---最低价1.3009---当前价1.3289
+KAVA/USDT:USDT---最高价0.6887---最低价0.6793---当前价0.6883
+FLOW/USDT:USDT---最高价0.945---最低价0.93---当前价0.945
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04834---当前价0.04945
+CHZ/USDT:USDT---最高价0.1548---最低价0.14774---当前价0.15203
+KLAY/USDT:USDT---最高价0.1941---最低价0.1903---当前价0.1939
+CFX/USDT:USDT---最高价0.223---最低价0.2191---当前价0.22283
+FXS/USDT:USDT---最高价4.4939---最低价4.4218---当前价4.4867
+ZEC/USDT:USDT---最高价26.86---最低价26.38---当前价26.85
+SUI/USDT:USDT---最高价1.0413---最低价1.0209---当前价1.0405
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.492
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8486
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11775
+DYDX/USDT:USDT---最高价2.098---最低价2.061---当前价2.096
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0163502
+COMP/USDT:USDT---最高价62.85---最低价61.84---当前价62.84
+SFP/USDT:USDT---最高价0.8233---最低价0.8128---当前价0.8225
+DASH/USDT:USDT---最高价30.3---最低价30.03---当前价30.26
+ASTR/USDT:USDT---最高价0.09057---最低价0.08911---当前价0.08995
+GMX/USDT:USDT---最高价34.68---最低价34.055---当前价34.608
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.3487
+AR/USDT:USDT---最高价38.49---最低价36.8---当前价38.396
+ROSE/USDT:USDT---最高价0.09324---最低价0.09145---当前价0.09317
+ZIL/USDT:USDT---最高价0.02502---最低价0.02461---当前价0.025
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4621
+BAT/USDT:USDT---最高价0.2479---最低价0.2451---当前价0.2478
+LRC/USDT:USDT---最高价0.2901---最低价0.2845---当前价0.2877
+ENJ/USDT:USDT---最高价0.3672---最低价0.3616---当前价0.3669
+AGIX/USDT:USDT---最高价0.9525---最低价0.9287---当前价0.9504
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.988
+SEI/USDT:USDT---最高价0.5441---最低价0.5294---当前价0.5435
+2024-05-29 12:20:54,578 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:21:54,579 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:22:54,581 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:23:54,582 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:24:54,584 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+CELO/USDT:USDT---最高价0.88---最低价0.865---当前价0.878
+MASK/USDT:USDT---最高价3.586---最低价3.504---当前价3.581
+LPT/USDT:USDT---最高价22.544---最低价21.384---当前价22.426
+FET/USDT:USDT---最高价2.2847---最低价2.2237---当前价2.2781
+OCEAN/USDT:USDT---最高价0.957---最低价0.9328---当前价0.9541
+RVN/USDT:USDT---最高价0.02972---最低价0.02928---当前价0.02972
+ANKR/USDT:USDT---最高价0.0453---最低价0.04474---当前价0.04527
+JASMY/USDT:USDT---最高价0.026521---最低价0.025315---当前价0.026433
+HOT/USDT:USDT---最高价0.002533---最低价0.002492---当前价0.00253
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7215.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.048
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.239
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4316
+WAVES/USDT:USDT---最高价2.4518---最低价2.4118---当前价2.4502
+KSM/USDT:USDT---最高价32.5---最低价31.86---当前价32.46
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30162
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.2301
+T/USDT:USDT---最高价0.03679---最低价0.03636---当前价0.03677
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6198
+ZRX/USDT:USDT---最高价0.5519---最低价0.5424---当前价0.5512
+SXP/USDT:USDT---最高价0.3576---最低价0.3516---当前价0.3574
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3172
+PENDLE/USDT:USDT---最高价6.6682---最低价6.4605---当前价6.4884
+BAND/USDT:USDT---最高价1.7656---最低价1.7318---当前价1.7653
+SSV/USDT:USDT---最高价45.602---最低价44.455---当前价45.518
+WLD/USDT:USDT---最高价4.8544---最低价4.656---当前价4.8438
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2445
+IOTX/USDT:USDT---最高价0.05557---最低价0.05434---当前价0.05538
+ONE/USDT:USDT---最高价0.02364---最低价0.02324---当前价0.02338
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8191
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016747
+STG/USDT:USDT---最高价0.5049---最低价0.495---当前价0.5014
+ZEN/USDT:USDT---最高价9.87---最低价9.685---当前价9.847
+SKL/USDT:USDT---最高价0.08538---最低价0.08385---当前价0.08536
+UMA/USDT:USDT---最高价3.447---最低价3.4---当前价3.439
+LOOM/USDT:USDT---最高价0.08569---最低价0.08448---当前价0.08563
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2103
+LQTY/USDT:USDT---最高价1.1624---最低价1.14---当前价1.1522
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.573
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.213
+MEME/USDT:USDT---最高价0.032871---最低价0.031294---当前价0.032598
+TIA/USDT:USDT---最高价11.6934---最低价11.081---当前价11.3515
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.45
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003207
+ALT/USDT:USDT---最高价0.35142---最低价0.34501---当前价0.34858
+XAI/USDT:USDT---最高价0.7789---最低价0.7591---当前价0.7714
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.13867
+PYTH/USDT:USDT---最高价0.4392---最低价0.4253---当前价0.4374
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6597
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5457
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.803
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15395
+JUP/USDT:USDT---最高价1.1932---最低价1.1452---当前价1.1927
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9608
+ID/USDT:USDT---最高价0.74486---最低价0.73439---当前价0.74428
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.024
+DOT/USDT:USDT---最高价7.425---最低价7.311---当前价7.423
+LDO/USDT:USDT---最高价2.3619---最低价2.3119---当前价2.3326
+VET/USDT:USDT---最高价0.036016---最低价0.035519---当前价0.035996
+XTZ/USDT:USDT---最高价0.979---最低价0.961---当前价0.979
+SNX/USDT:USDT---最高价3.014---最低价2.959---当前价3.011
+GALA/USDT:USDT---最高价0.04579---最低价0.04501---当前价0.04553
+QTUM/USDT:USDT---最高价3.767---最低价3.705---当前价3.763
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0387
+IOST/USDT:USDT---最高价0.009012---最低价0.008887---当前价0.009005
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8325
+RONIN/USDT:USDT---最高价3.2036---最低价3.1651---当前价3.2015
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8993
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68887.0
+ETH/USDT:USDT---最高价3886.0---最低价3837.28---当前价3878.45
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5299
+ADA/USDT:USDT---最高价0.4641---最低价0.4573---当前价0.4635
+DOGE/USDT:USDT---最高价0.17114---最低价0.16525---当前价0.1692
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.156
+TRX/USDT:USDT---最高价0.11189---最低价0.11105---当前价0.11184
+MATIC/USDT:USDT---最高价0.7362---最低价0.7194---当前价0.7348
+LTC/USDT:USDT---最高价84.14---最低价83.23---当前价84.09
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026929---当前价0.028654
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.13
+AVAX/USDT:USDT---最高价37.458---最低价36.713---当前价37.359
+XLM/USDT:USDT---最高价0.10905---最低价0.10754---当前价0.10895
+LINK/USDT:USDT---最高价18.537---最低价18.263---当前价18.461
+XMR/USDT:USDT---最高价142.56---最低价141.26---当前价142.38
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.22
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.726
+ETC/USDT:USDT---最高价31.668---最低价31.076---当前价31.627
+HBAR/USDT:USDT---最高价0.10556---最低价0.10391---当前价0.10546
+ICP/USDT:USDT---最高价12.225---最低价12.017---当前价12.188
+FIL/USDT:USDT---最高价5.994---最低价5.885---当前价5.988
+APT/USDT:USDT---最高价9.458---最低价9.23---当前价9.439
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.89
+ARB/USDT:USDT---最高价1.2079---最低价1.1852---当前价1.2041
+MKR/USDT:USDT---最高价2746.4---最低价2708.4---当前价2740.3
+OP/USDT:USDT---最高价2.5782---最低价2.5308---当前价2.5713
+NEAR/USDT:USDT---最高价7.824---最低价7.62---当前价7.812
+AAVE/USDT:USDT---最高价107.02---最低价105.01---当前价106.42
+GRT/USDT:USDT---最高价0.32246---最低价0.31232---当前价0.32143
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.1937
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.0078
+EOS/USDT:USDT---最高价0.825---最低价0.807---当前价0.821
+EGLD/USDT:USDT---最高价40.55---最低价39.55---当前价40.47
+AXS/USDT:USDT---最高价7.857---最低价7.645---当前价7.836
+SAND/USDT:USDT---最高价0.4563---最低价0.4461---当前价0.4557
+THETA/USDT:USDT---最高价2.3095---最低价2.2526---当前价2.3069
+IMX/USDT:USDT---最高价2.3207---最低价2.2811---当前价2.3174
+INJ/USDT:USDT---最高价26.588---最低价26.002---当前价26.457
+FTM/USDT:USDT---最高价0.8357---最低价0.8229---当前价0.8347
+MANA/USDT:USDT---最高价0.463---最低价0.4495---当前价0.4624
+NEO/USDT:USDT---最高价15.491---最低价15.18---当前价15.476
+RUNE/USDT:USDT---最高价6.769---最低价6.661---当前价6.75
+RNDR/USDT:USDT---最高价10.5299---最低价10.2055---当前价10.501
+APE/USDT:USDT---最高价1.3309---最低价1.3009---当前价1.3305
+KAVA/USDT:USDT---最高价0.6893---最低价0.6793---当前价0.6885
+FLOW/USDT:USDT---最高价0.946---最低价0.93---当前价0.944
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04834---当前价0.04942
+CHZ/USDT:USDT---最高价0.1548---最低价0.14774---当前价0.15173
+KLAY/USDT:USDT---最高价0.1942---最低价0.1903---当前价0.1939
+CFX/USDT:USDT---最高价0.223---最低价0.2191---当前价0.22256
+2024-05-29 12:25:54,605 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:26:54,606 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:27:54,608 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:28:54,609 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:29:54,611 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+FXS/USDT:USDT---最高价4.4939---最低价4.4218---当前价4.4794
+ZEC/USDT:USDT---最高价26.88---最低价26.38---当前价26.85
+SUI/USDT:USDT---最高价1.0424---最低价1.0209---当前价1.0421
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.493
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8473
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11804
+DYDX/USDT:USDT---最高价2.102---最低价2.061---当前价2.099
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0163543
+COMP/USDT:USDT---最高价62.89---最低价61.84---当前价62.75
+SFP/USDT:USDT---最高价0.8242---最低价0.8128---当前价0.8239
+DASH/USDT:USDT---最高价30.33---最低价30.03---当前价30.31
+ASTR/USDT:USDT---最高价0.09045---最低价0.08911---当前价0.08989
+GMX/USDT:USDT---最高价34.68---最低价34.055---当前价34.635
+WOO/USDT:USDT---最高价0.34962---最低价0.34491---当前价0.34905
+AR/USDT:USDT---最高价38.49---最低价36.8---当前价38.406
+ROSE/USDT:USDT---最高价0.09333---最低价0.09145---当前价0.09319
+ZIL/USDT:USDT---最高价0.02504---最低价0.02461---当前价0.025
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4638
+BAT/USDT:USDT---最高价0.2482---最低价0.2451---当前价0.248
+LRC/USDT:USDT---最高价0.2893---最低价0.2845---当前价0.2878
+ENJ/USDT:USDT---最高价0.3674---最低价0.3616---当前价0.3672
+AGIX/USDT:USDT---最高价0.9535---最低价0.9287---当前价0.9507
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.075
+SEI/USDT:USDT---最高价0.5441---最低价0.5294---当前价0.5432
+CELO/USDT:USDT---最高价0.881---最低价0.865---当前价0.879
+MASK/USDT:USDT---最高价3.59---最低价3.504---当前价3.584
+LPT/USDT:USDT---最高价22.544---最低价21.384---当前价22.429
+FET/USDT:USDT---最高价2.2847---最低价2.2237---当前价2.2768
+OCEAN/USDT:USDT---最高价0.9578---最低价0.9328---当前价0.9554
+RVN/USDT:USDT---最高价0.02973---最低价0.02928---当前价0.02969
+ANKR/USDT:USDT---最高价0.0453---最低价0.04474---当前价0.04523
+JASMY/USDT:USDT---最高价0.026521---最低价0.025315---当前价0.026372
+HOT/USDT:USDT---最高价0.002534---最低价0.002492---当前价0.002526
+YFI/USDT:USDT---最高价7223.0---最低价7148.0---当前价7216.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.051
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.2386
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4319
+WAVES/USDT:USDT---最高价2.4522---最低价2.4118---当前价2.45
+KSM/USDT:USDT---最高价32.52---最低价31.86---当前价32.5
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30183
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.2301
+T/USDT:USDT---最高价0.03685---最低价0.03636---当前价0.0368
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.62
+ZRX/USDT:USDT---最高价0.5519---最低价0.5424---当前价0.551
+SXP/USDT:USDT---最高价0.3578---最低价0.3516---当前价0.3575
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3173
+PENDLE/USDT:USDT---最高价6.667---最低价6.4605---当前价6.4948
+BAND/USDT:USDT---最高价1.7666---最低价1.7318---当前价1.7647
+SSV/USDT:USDT---最高价45.718---最低价44.455---当前价45.595
+WLD/USDT:USDT---最高价4.8578---最低价4.656---当前价4.8468
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2449
+IOTX/USDT:USDT---最高价0.05557---最低价0.05434---当前价0.05546
+IOST/USDT:USDT---最高价0.009013---最低价0.008887---当前价0.009006
+ONE/USDT:USDT---最高价0.02362---最低价0.02324---当前价0.02333
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8184
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016835
+STG/USDT:USDT---最高价0.5042---最低价0.495---当前价0.5012
+ZEN/USDT:USDT---最高价9.873---最低价9.685---当前价9.852
+SKL/USDT:USDT---最高价0.08556---最低价0.08385---当前价0.08547
+UMA/USDT:USDT---最高价3.449---最低价3.4---当前价3.448
+LOOM/USDT:USDT---最高价0.08573---最低价0.08448---当前价0.08566
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2102
+LQTY/USDT:USDT---最高价1.1624---最低价1.14---当前价1.1526
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5722
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.218
+MEME/USDT:USDT---最高价0.032871---最低价0.031294---当前价0.032436
+TIA/USDT:USDT---最高价11.6147---最低价11.081---当前价11.3187
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.598
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003197
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8267
+ALT/USDT:USDT---最高价0.35076---最低价0.34501---当前价0.34867
+XAI/USDT:USDT---最高价0.778---最低价0.7591---当前价0.7693
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.13645
+PYTH/USDT:USDT---最高价0.4392---最低价0.4253---当前价0.4367
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6613
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5449
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.7915
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15372
+JUP/USDT:USDT---最高价1.1932---最低价1.1452---当前价1.1866
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.958
+ID/USDT:USDT---最高价0.74537---最低价0.73439---当前价0.74491
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价3.999
+DOT/USDT:USDT---最高价7.443---最低价7.311---当前价7.435
+LDO/USDT:USDT---最高价2.3617---最低价2.3119---当前价2.3367
+VET/USDT:USDT---最高价0.036056---最低价0.035519---当前价0.036029
+XTZ/USDT:USDT---最高价0.979---最低价0.961---当前价0.977
+SNX/USDT:USDT---最高价3.025---最低价2.959---当前价3.021
+GALA/USDT:USDT---最高价0.04579---最低价0.04501---当前价0.04562
+QTUM/USDT:USDT---最高价3.768---最低价3.705---当前价3.766
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0388
+RONIN/USDT:USDT---最高价3.2106---最低价3.1651---当前价3.2076
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.8991
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68950.9
+ETH/USDT:USDT---最高价3891.79---最低价3837.28---当前价3885.42
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5294
+ADA/USDT:USDT---最高价0.4643---最低价0.4573---当前价0.4639
+DOGE/USDT:USDT---最高价0.17114---最低价0.16525---当前价0.16972
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.269
+TRX/USDT:USDT---最高价0.11194---最低价0.11105---当前价0.11193
+MATIC/USDT:USDT---最高价0.7362---最低价0.7194---当前价0.7346
+LTC/USDT:USDT---最高价84.14---最低价83.23---当前价84.08
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.026978---当前价0.02874
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价474.6
+AVAX/USDT:USDT---最高价37.467---最低价36.713---当前价37.44
+XLM/USDT:USDT---最高价0.10905---最低价0.10754---当前价0.10893
+LINK/USDT:USDT---最高价18.537---最低价18.263---当前价18.466
+XMR/USDT:USDT---最高价142.72---最低价141.36---当前价142.72
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.218
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.754
+ETC/USDT:USDT---最高价31.689---最低价31.076---当前价31.638
+HBAR/USDT:USDT---最高价0.1057---最低价0.10391---当前价0.10555
+ICP/USDT:USDT---最高价12.225---最低价12.017---当前价12.21
+FIL/USDT:USDT---最高价5.996---最低价5.885---当前价5.988
+APT/USDT:USDT---最高价9.473---最低价9.23---当前价9.462
+ARB/USDT:USDT---最高价1.2079---最低价1.1852---当前价1.2062
+MKR/USDT:USDT---最高价2746.4---最低价2708.4---当前价2745.6
+OP/USDT:USDT---最高价2.58---最低价2.5308---当前价2.5768
+NEAR/USDT:USDT---最高价7.833---最低价7.62---当前价7.833
+2024-05-29 12:30:54,617 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:31:04,885 - freqtrade.wallets - INFO - Wallets synced.
+2024-05-29 12:31:54,618 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:32:54,620 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:33:54,622 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:34:54,623 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+AAVE/USDT:USDT---最高价107.24---最低价105.01---当前价106.75
+GRT/USDT:USDT---最高价0.32246---最低价0.31232---当前价0.32152
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.1939
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.0093
+EOS/USDT:USDT---最高价0.825---最低价0.807---当前价0.82
+EGLD/USDT:USDT---最高价40.56---最低价39.55---当前价40.53
+AXS/USDT:USDT---最高价7.857---最低价7.645---当前价7.853
+SAND/USDT:USDT---最高价0.4565---最低价0.4461---当前价0.4564
+THETA/USDT:USDT---最高价2.3097---最低价2.2526---当前价2.3054
+IMX/USDT:USDT---最高价2.3243---最低价2.2811---当前价2.3212
+INJ/USDT:USDT---最高价26.588---最低价26.002---当前价26.54
+FTM/USDT:USDT---最高价0.8364---最低价0.8229---当前价0.8359
+MANA/USDT:USDT---最高价0.4637---最低价0.4495---当前价0.4636
+NEO/USDT:USDT---最高价15.502---最低价15.18---当前价15.494
+RUNE/USDT:USDT---最高价6.769---最低价6.661---当前价6.75
+RNDR/USDT:USDT---最高价10.5299---最低价10.212---当前价10.5215
+APE/USDT:USDT---最高价1.3318---最低价1.3009---当前价1.3313
+KAVA/USDT:USDT---最高价0.6897---最低价0.6793---当前价0.6894
+FLOW/USDT:USDT---最高价0.946---最低价0.93---当前价0.945
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04836---当前价0.04944
+KLAY/USDT:USDT---最高价0.1943---最低价0.1903---当前价0.1942
+CFX/USDT:USDT---最高价0.223---最低价0.2191---当前价0.22256
+FXS/USDT:USDT---最高价4.4946---最低价4.4218---当前价4.4943
+ZEC/USDT:USDT---最高价26.88---最低价26.38---当前价26.86
+SUI/USDT:USDT---最高价1.044---最低价1.0209---当前价1.0428
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.492
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8481
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11807
+DYDX/USDT:USDT---最高价2.107---最低价2.061---当前价2.106
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0164055
+COMP/USDT:USDT---最高价62.99---最低价61.84---当前价62.93
+SFP/USDT:USDT---最高价0.8247---最低价0.8128---当前价0.8244
+DASH/USDT:USDT---最高价30.35---最低价30.03---当前价30.34
+ASTR/USDT:USDT---最高价0.09037---最低价0.08911---当前价0.08989
+GMX/USDT:USDT---最高价34.733---最低价34.055---当前价34.727
+WOO/USDT:USDT---最高价0.35035---最低价0.34491---当前价0.34972
+AR/USDT:USDT---最高价38.53---最低价36.8---当前价38.509
+ROSE/USDT:USDT---最高价0.09333---最低价0.09145---当前价0.09323
+ZIL/USDT:USDT---最高价0.02504---最低价0.02461---当前价0.02503
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4644
+BAT/USDT:USDT---最高价0.2484---最低价0.2451---当前价0.2482
+LRC/USDT:USDT---最高价0.289---最低价0.2845---当前价0.2881
+ENJ/USDT:USDT---最高价0.3676---最低价0.3616---当前价0.3675
+AGIX/USDT:USDT---最高价0.9535---最低价0.9287---当前价0.9513
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.073
+SEI/USDT:USDT---最高价0.5457---最低价0.5294---当前价0.5443
+CELO/USDT:USDT---最高价0.881---最低价0.865---当前价0.879
+MASK/USDT:USDT---最高价3.59---最低价3.504---当前价3.58
+LPT/USDT:USDT---最高价22.544---最低价21.384---当前价22.392
+FET/USDT:USDT---最高价2.2847---最低价2.2237---当前价2.275
+OCEAN/USDT:USDT---最高价0.9578---最低价0.9328---当前价0.9546
+RVN/USDT:USDT---最高价0.02973---最低价0.02928---当前价0.02972
+ANKR/USDT:USDT---最高价0.04533---最低价0.04474---当前价0.04532
+JASMY/USDT:USDT---最高价0.026521---最低价0.025315---当前价0.026334
+HOT/USDT:USDT---最高价0.002534---最低价0.002492---当前价0.002529
+YFI/USDT:USDT---最高价7229.0---最低价7148.0---当前价7228.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.055
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.2391
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4333
+WAVES/USDT:USDT---最高价2.4522---最低价2.4118---当前价2.4513
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30116
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.2303
+T/USDT:USDT---最高价0.03686---最低价0.03636---当前价0.03681
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.621
+ZRX/USDT:USDT---最高价0.5524---最低价0.5424---当前价0.5522
+SXP/USDT:USDT---最高价0.3578---最低价0.3516---当前价0.3575
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3176
+PENDLE/USDT:USDT---最高价6.6624---最低价6.4605---当前价6.4902
+BAND/USDT:USDT---最高价1.7673---最低价1.7318---当前价1.7663
+SSV/USDT:USDT---最高价45.718---最低价44.455---当前价45.563
+WLD/USDT:USDT---最高价4.8578---最低价4.656---当前价4.8294
+IOTX/USDT:USDT---最高价0.05557---最低价0.05434---当前价0.05555
+ONE/USDT:USDT---最高价0.02362---最低价0.02324---当前价0.02335
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.8191
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.016863
+STG/USDT:USDT---最高价0.5042---最低价0.495---当前价0.5016
+ZEN/USDT:USDT---最高价9.873---最低价9.685---当前价9.861
+SKL/USDT:USDT---最高价0.08567---最低价0.08385---当前价0.0855
+UMA/USDT:USDT---最高价3.45---最低价3.4---当前价3.444
+LOOM/USDT:USDT---最高价0.08575---最低价0.08448---当前价0.08565
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2103
+LQTY/USDT:USDT---最高价1.1624---最低价1.14---当前价1.1532
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5725
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.2
+MEME/USDT:USDT---最高价0.032871---最低价0.031294---当前价0.032472
+TIA/USDT:USDT---最高价11.6147---最低价11.081---当前价11.3682
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.629
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.0003208
+ALT/USDT:USDT---最高价0.35076---最低价0.34501---当前价0.34943
+XAI/USDT:USDT---最高价0.778---最低价0.7591---当前价0.7708
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.13634
+PYTH/USDT:USDT---最高价0.4393---最低价0.4253---当前价0.4392
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6634
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.5456
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.7966
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15431
+JUP/USDT:USDT---最高价1.1932---最低价1.1452---当前价1.1884
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9579
+ID/USDT:USDT---最高价0.74579---最低价0.73439---当前价0.74492
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价4.0073
+DOT/USDT:USDT---最高价7.443---最低价7.311---当前价7.433
+LDO/USDT:USDT---最高价2.3617---最低价2.3119---当前价2.3367
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.99
+VET/USDT:USDT---最高价0.036073---最低价0.035519---当前价0.036045
+XTZ/USDT:USDT---最高价0.98---最低价0.961---当前价0.979
+SNX/USDT:USDT---最高价3.025---最低价2.959---当前价3.021
+CHZ/USDT:USDT---最高价0.1548---最低价0.14774---当前价0.15206
+GALA/USDT:USDT---最高价0.04579---最低价0.04501---当前价0.04579
+QTUM/USDT:USDT---最高价3.769---最低价3.705---当前价3.766
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0387
+KSM/USDT:USDT---最高价32.57---最低价31.86---当前价32.52
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2455
+IOST/USDT:USDT---最高价0.00902---最低价0.008887---当前价0.009018
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8294
+RONIN/USDT:USDT---最高价3.2132---最低价3.1651---当前价3.2115
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.9025
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68902.9
+ETH/USDT:USDT---最高价3891.79---最低价3837.28---当前价3879.32
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5295
+ADA/USDT:USDT---最高价0.4643---最低价0.4573---当前价0.4635
+DOGE/USDT:USDT---最高价0.17114---最低价0.16545---当前价0.16929
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.068
+TRX/USDT:USDT---最高价0.11194---最低价0.11105---当前价0.11192
+MATIC/USDT:USDT---最高价0.7362---最低价0.7194---当前价0.7328
+LTC/USDT:USDT---最高价84.14---最低价83.23---当前价83.95
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.027066---当前价0.028569
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价473.33
+AVAX/USDT:USDT---最高价37.467---最低价36.713---当前价37.354
+XLM/USDT:USDT---最高价0.10905---最低价0.10754---当前价0.10885
+LINK/USDT:USDT---最高价18.534---最低价18.263---当前价18.45
+XMR/USDT:USDT---最高价142.76---最低价141.36---当前价142.74
+UNI/USDT:USDT---最高价11.343---最低价10.879---当前价11.173
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.739
+ETC/USDT:USDT---最高价31.689---最低价31.076---当前价31.528
+HBAR/USDT:USDT---最高价0.1057---最低价0.10391---当前价0.10542
+ICP/USDT:USDT---最高价12.225---最低价12.017---当前价12.193
+FIL/USDT:USDT---最高价5.996---最低价5.885---当前价5.977
+APT/USDT:USDT---最高价9.473---最低价9.23---当前价9.415
+ARB/USDT:USDT---最高价1.2079---最低价1.1852---当前价1.2019
+MKR/USDT:USDT---最高价2746.4---最低价2708.4---当前价2740.8
+OP/USDT:USDT---最高价2.58---最低价2.5308---当前价2.5729
+NEAR/USDT:USDT---最高价7.834---最低价7.62---当前价7.826
+AAVE/USDT:USDT---最高价107.24---最低价105.01---当前价106.57
+GRT/USDT:USDT---最高价0.32246---最低价0.31232---当前价0.32008
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.194
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.0059
+EOS/USDT:USDT---最高价0.825---最低价0.807---当前价0.818
+EGLD/USDT:USDT---最高价40.56---最低价39.55---当前价40.46
+AXS/USDT:USDT---最高价7.89---最低价7.645---当前价7.889
+SAND/USDT:USDT---最高价0.4566---最低价0.4461---当前价0.4561
+THETA/USDT:USDT---最高价2.3097---最低价2.2526---当前价2.3035
+IMX/USDT:USDT---最高价2.3243---最低价2.2811---当前价2.3156
+INJ/USDT:USDT---最高价26.588---最低价26.002---当前价26.545
+FTM/USDT:USDT---最高价0.8392---最低价0.8229---当前价0.8388
+MANA/USDT:USDT---最高价0.464---最低价0.4495---当前价0.4635
+NEO/USDT:USDT---最高价15.502---最低价15.18---当前价15.465
+RUNE/USDT:USDT---最高价6.769---最低价6.661---当前价6.734
+RNDR/USDT:USDT---最高价10.5299---最低价10.2257---当前价10.5013
+APE/USDT:USDT---最高价1.3318---最低价1.3009---当前价1.3278
+KAVA/USDT:USDT---最高价0.6897---最低价0.6793---当前价0.6885
+FLOW/USDT:USDT---最高价0.946---最低价0.93---当前价0.944
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04836---当前价0.04934
+CHZ/USDT:USDT---最高价0.1548---最低价0.14774---当前价0.15151
+KLAY/USDT:USDT---最高价0.1943---最低价0.1903---当前价0.1938
+CFX/USDT:USDT---最高价0.223---最低价0.2191---当前价0.22225
+FXS/USDT:USDT---最高价4.4947---最低价4.4218---当前价4.4826
+ZEC/USDT:USDT---最高价26.88---最低价26.38---当前价26.85
+SUI/USDT:USDT---最高价1.044---最低价1.0209---当前价1.0422
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.493
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8476
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11788
+DYDX/USDT:USDT---最高价2.107---最低价2.061---当前价2.106
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0163228
+COMP/USDT:USDT---最高价62.99---最低价61.84---当前价62.73
+SFP/USDT:USDT---最高价0.8247---最低价0.8128---当前价0.8241
+DASH/USDT:USDT---最高价30.36---最低价30.03---当前价30.32
+ASTR/USDT:USDT---最高价0.09037---最低价0.08911---当前价0.08972
+GMX/USDT:USDT---最高价34.733---最低价34.055---当前价34.61
+WOO/USDT:USDT---最高价0.35035---最低价0.34491---当前价0.34946
+AR/USDT:USDT---最高价38.53---最低价36.8---当前价38.259
+ROSE/USDT:USDT---最高价0.09333---最低价0.09145---当前价0.09321
+ZIL/USDT:USDT---最高价0.02504---最低价0.02461---当前价0.02502
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4664
+BAT/USDT:USDT---最高价0.2484---最低价0.2451---当前价0.2479
+LRC/USDT:USDT---最高价0.2889---最低价0.2845---当前价0.2881
+ENJ/USDT:USDT---最高价0.3676---最低价0.3616---当前价0.3671
+AGIX/USDT:USDT---最高价0.9535---最低价0.9287---当前价0.9469
+QTUM/USDT:USDT---最高价3.769---最低价3.705---当前价3.765
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价26.002
+SEI/USDT:USDT---最高价0.5457---最低价0.5294---当前价0.5426
+CELO/USDT:USDT---最高价0.881---最低价0.865---当前价0.878
+LPT/USDT:USDT---最高价22.544---最低价21.384---当前价22.109
+FET/USDT:USDT---最高价2.2847---最低价2.2237---当前价2.2647
+OCEAN/USDT:USDT---最高价0.9578---最低价0.9328---当前价0.9505
+RVN/USDT:USDT---最高价0.02974---最低价0.02928---当前价0.0297
+ANKR/USDT:USDT---最高价0.04533---最低价0.04474---当前价0.04526
+JASMY/USDT:USDT---最高价0.026521---最低价0.025315---当前价0.026162
+HOT/USDT:USDT---最高价0.002534---最低价0.002492---当前价0.002533
+YFI/USDT:USDT---最高价7229.0---最低价7148.0---当前价7225.0
+BAL/USDT:USDT---最高价4.069---最低价4.015---当前价4.05
+GMT/USDT:USDT---最高价0.2393---最低价0.2356---当前价0.239
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4326
+WAVES/USDT:USDT---最高价2.4522---最低价2.4118---当前价2.4486
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30033
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.2299
+T/USDT:USDT---最高价0.03686---最低价0.03636---当前价0.03682
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6187
+ZRX/USDT:USDT---最高价0.5524---最低价0.5424---当前价0.5508
+SXP/USDT:USDT---最高价0.3578---最低价0.3516---当前价0.3567
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3167
+PENDLE/USDT:USDT---最高价6.6624---最低价6.4553---当前价6.4631
+BAND/USDT:USDT---最高价1.7673---最低价1.7318---当前价1.7597
+SSV/USDT:USDT---最高价45.718---最低价44.455---当前价45.273
+WLD/USDT:USDT---最高价4.8578---最低价4.656---当前价4.819
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2403
+IOTX/USDT:USDT---最高价0.05557---最低价0.05434---当前价0.05538
+ONE/USDT:USDT---最高价0.02362---最低价0.02324---当前价0.02331
+MAGIC/USDT:USDT---最高价0.8213---最低价0.8092---当前价0.817
+CKB/USDT:USDT---最高价0.016913---最低价0.016522---当前价0.01678
+STG/USDT:USDT---最高价0.5042---最低价0.495---当前价0.4999
+ZEN/USDT:USDT---最高价9.873---最低价9.685---当前价9.854
+SKL/USDT:USDT---最高价0.08567---最低价0.08385---当前价0.08535
+UMA/USDT:USDT---最高价3.45---最低价3.4---当前价3.445
+LOOM/USDT:USDT---最高价0.08575---最低价0.08448---当前价0.08554
+BIGTIME/USDT:USDT---最高价0.2162---最低价0.208---当前价0.2099
+LQTY/USDT:USDT---最高价1.1624---最低价1.14---当前价1.1499
+STORJ/USDT:USDT---最高价0.5736---最低价0.5641---当前价0.5719
+CYBER/USDT:USDT---最高价9.299---最低价9.093---当前价9.176
+MEME/USDT:USDT---最高价0.032871---最低价0.031294---当前价0.032412
+TIA/USDT:USDT---最高价11.6147---最低价11.081---当前价11.4032
+ORDI/USDT:USDT---最高价41.909---最低价40.767---当前价41.437
+1000SATS/USDT:USDT---最高价0.0003243---最低价0.0003114---当前价0.000319
+MANTA/USDT:USDT---最高价1.8799---最低价1.8095---当前价1.8296
+ALT/USDT:USDT---最高价0.35076---最低价0.34501---当前价0.34881
+XAI/USDT:USDT---最高价0.778---最低价0.7591---当前价0.7677
+AI/USDT:USDT---最高价1.14737---最低价1.11534---当前价1.13586
+2024-05-29 12:35:59,367 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:36:59,369 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:37:59,371 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:38:59,372 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+2024-05-29 12:39:59,374 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
+PYTH/USDT:USDT---最高价0.4393---最低价0.4253---当前价0.4381
+ACE/USDT:USDT---最高价5.7752---最低价5.6116---当前价5.6589
+NFP/USDT:USDT---最高价0.5474---最低价0.5254---当前价0.544
+JTO/USDT:USDT---最高价3.8096---最低价3.5914---当前价3.7664
+1000RATS/USDT:USDT---最高价0.15543---最低价0.14728---当前价0.15304
+JUP/USDT:USDT---最高价1.1932---最低价1.1452---当前价1.1868
+CAKE/USDT:USDT---最高价2.974---最低价2.9363---当前价2.9549
+ID/USDT:USDT---最高价0.74579---最低价0.73439---当前价0.74325
+WIF/USDT:USDT---最高价4.0817---最低价3.6955---当前价3.9754
+DOT/USDT:USDT---最高价7.443---最低价7.311---当前价7.425
+LDO/USDT:USDT---最高价2.3593---最低价2.3119---当前价2.3284
+QNT/USDT:USDT---最高价92.11---最低价90.84---当前价91.87
+VET/USDT:USDT---最高价0.036073---最低价0.035519---当前价0.035976
+XTZ/USDT:USDT---最高价0.98---最低价0.961---当前价0.977
+SNX/USDT:USDT---最高价3.025---最低价2.959---当前价3.015
+GALA/USDT:USDT---最高价0.04579---最低价0.04501---当前价0.04564
+XEM/USDT:USDT---最高价0.0388---最低价0.0382---当前价0.0387
+MASK/USDT:USDT---最高价3.59---最低价3.504---当前价3.578
+KSM/USDT:USDT---最高价32.57---最低价31.86---当前价32.41
+IOST/USDT:USDT---最高价0.00902---最低价0.008887---当前价0.009006
+RONIN/USDT:USDT---最高价3.2132---最低价3.1651---当前价3.209
+ENA/USDT:USDT---最高价0.9083---最低价0.8877---当前价0.9013
+BTC/USDT:USDT---最高价68983.0---最低价68341.3---当前价68947.9
+ETH/USDT:USDT---最高价3891.79---最低价3837.28---当前价3878.26
+XRP/USDT:USDT---最高价0.531---最低价0.5253---当前价0.5302
+ADA/USDT:USDT---最高价0.4643---最低价0.4573---当前价0.4637
+DOGE/USDT:USDT---最高价0.17114---最低价0.16557---当前价0.16996
+SOL/USDT:USDT---最高价173.078---最低价167.507---当前价172.281
+TRX/USDT:USDT---最高价0.11194---最低价0.11105---当前价0.11191
+MATIC/USDT:USDT---最高价0.7362---最低价0.7194---当前价0.7335
+LTC/USDT:USDT---最高价84.14---最低价83.23---当前价83.98
+1000SHIB/USDT:USDT---最高价0.029074---最低价0.027089---当前价0.028919
+BCH/USDT:USDT---最高价474.98---最低价467.31---当前价473.48
+AVAX/USDT:USDT---最高价37.467---最低价36.713---当前价37.348
+XLM/USDT:USDT---最高价0.10905---最低价0.10754---当前价0.10898
+LINK/USDT:USDT---最高价18.55---最低价18.263---当前价18.548
+XMR/USDT:USDT---最高价142.81---最低价141.36---当前价142.77
+ATOM/USDT:USDT---最高价8.761---最低价8.631---当前价8.734
+ETC/USDT:USDT---最高价31.689---最低价31.076---当前价31.485
+HBAR/USDT:USDT---最高价0.1057---最低价0.10391---当前价0.10544
+ICP/USDT:USDT---最高价12.225---最低价12.017---当前价12.203
+FIL/USDT:USDT---最高价5.996---最低价5.885---当前价5.986
+APT/USDT:USDT---最高价9.473---最低价9.23---当前价9.404
+ARB/USDT:USDT---最高价1.2079---最低价1.1852---当前价1.2001
+MKR/USDT:USDT---最高价2746.4---最低价2708.4---当前价2741.5
+OP/USDT:USDT---最高价2.58---最低价2.5308---当前价2.5695
+NEAR/USDT:USDT---最高价7.834---最低价7.62---当前价7.808
+GRT/USDT:USDT---最高价0.32246---最低价0.31232---当前价0.32046
+ALGO/USDT:USDT---最高价0.1946---最低价0.1911---当前价0.194
+STX/USDT:USDT---最高价2.0116---最低价1.9719---当前价2.007
+XTZ/USDT:USDT---最高价0.98---最低价0.961---当前价0.979
+EOS/USDT:USDT---最高价0.825---最低价0.807---当前价0.819
+EGLD/USDT:USDT---最高价40.56---最低价39.55---当前价40.47
+AXS/USDT:USDT---最高价7.92---最低价7.645---当前价7.917
+SAND/USDT:USDT---最高价0.4574---最低价0.4461---当前价0.4571
+THETA/USDT:USDT---最高价2.3105---最低价2.2526---当前价2.3078
+IMX/USDT:USDT---最高价2.3243---最低价2.2811---当前价2.3117
+INJ/USDT:USDT---最高价26.594---最低价26.002---当前价26.552
+FTM/USDT:USDT---最高价0.844---最低价0.8229---当前价0.839
+MANA/USDT:USDT---最高价0.4648---最低价0.4495---当前价0.4644
+NEO/USDT:USDT---最高价15.502---最低价15.18---当前价15.472
+RUNE/USDT:USDT---最高价6.765---最低价6.661---当前价6.738
+RNDR/USDT:USDT---最高价10.5299---最低价10.2257---当前价10.5156
+APE/USDT:USDT---最高价1.3319---最低价1.3009---当前价1.3308
+KAVA/USDT:USDT---最高价0.6897---最低价0.6793---当前价0.6886
+FLOW/USDT:USDT---最高价0.946---最低价0.93---当前价0.944
+1000XEC/USDT:USDT---最高价0.04952---最低价0.04836---当前价0.04944
+KLAY/USDT:USDT---最高价0.1943---最低价0.1903---当前价0.1938
+CFX/USDT:USDT---最高价0.223---最低价0.2191---当前价0.2225
+FXS/USDT:USDT---最高价4.4947---最低价4.4218---当前价4.4826
+ZEC/USDT:USDT---最高价26.9---最低价26.38---当前价26.9
+SUI/USDT:USDT---最高价1.0446---最低价1.0209---当前价1.0426
+CRV/USDT:USDT---最高价0.494---最低价0.484---当前价0.493
+GALA/USDT:USDT---最高价0.04579---最低价0.04501---当前价0.04567
+MINA/USDT:USDT---最高价0.8508---最低价0.8371---当前价0.8479
+1000LUNC/USDT:USDT---最高价0.11914---最低价0.11457---当前价0.11746
+DYDX/USDT:USDT---最高价2.107---最低价2.061---当前价2.104
+1000PEPE/USDT:USDT---最高价0.016609---最低价0.0160411---当前价0.0163441
+COMP/USDT:USDT---最高价62.99---最低价61.84---当前价62.74
+SFP/USDT:USDT---最高价0.825---最低价0.8128---当前价0.8247
+DASH/USDT:USDT---最高价30.36---最低价30.03---当前价30.36
+ASTR/USDT:USDT---最高价0.09033---最低价0.08911---当前价0.08973
+GMX/USDT:USDT---最高价34.733---最低价34.055---当前价34.633
+WOO/USDT:USDT---最高价0.35035---最低价0.34491---当前价0.34918
+AR/USDT:USDT---最高价38.53---最低价36.8---当前价38.185
+ROSE/USDT:USDT---最高价0.09336---最低价0.09145---当前价0.09323
+ZIL/USDT:USDT---最高价0.0251---最低价0.02461---当前价0.02508
+1INCH/USDT:USDT---最高价0.4816---最低价0.4574---当前价0.4674
+BAT/USDT:USDT---最高价0.2484---最低价0.2451---当前价0.2483
+LRC/USDT:USDT---最高价0.2896---最低价0.2845---当前价0.2893
+ENJ/USDT:USDT---最高价0.3676---最低价0.3616---当前价0.3672
+AGIX/USDT:USDT---最高价0.9535---最低价0.9287---当前价0.9487
+ENS/USDT:USDT---最高价26.572---最低价25.676---当前价25.992
+SEI/USDT:USDT---最高价0.5457---最低价0.5294---当前价0.5434
+CELO/USDT:USDT---最高价0.881---最低价0.865---当前价0.877
+LPT/USDT:USDT---最高价22.544---最低价21.384---当前价22.2
+FET/USDT:USDT---最高价2.2847---最低价2.2237---当前价2.2698
+OCEAN/USDT:USDT---最高价0.9578---最低价0.9328---当前价0.9524
+RVN/USDT:USDT---最高价0.02977---最低价0.02928---当前价0.02975
+ANKR/USDT:USDT---最高价0.04537---最低价0.04474---当前价0.04532
+JASMY/USDT:USDT---最高价0.026521---最低价0.025315---当前价0.026066
+HOT/USDT:USDT---最高价0.002543---最低价0.002492---当前价0.002542
+YFI/USDT:USDT---最高价7233.0---最低价7148.0---当前价7230.0
+BAL/USDT:USDT---最高价4.068---最低价4.015---当前价4.049
+GMT/USDT:USDT---最高价0.2395---最低价0.2356---当前价0.2393
+BLUR/USDT:USDT---最高价0.4357---最低价0.4267---当前价0.4333
+WAVES/USDT:USDT---最高价2.4522---最低价2.4118---当前价2.4493
+1000FLOKI/USDT:USDT---最高价0.30447---最低价0.2878---当前价0.30337
+ICX/USDT:USDT---最高价0.2307---最低价0.2284---当前价0.23
+LUNA2/USDT:USDT---最高价0.6236---最低价0.6029---当前价0.6171
+ZRX/USDT:USDT---最高价0.5524---最低价0.5424---当前价0.5519
+SXP/USDT:USDT---最高价0.3578---最低价0.3516---当前价0.357
+ONT/USDT:USDT---最高价0.3185---最低价0.3091---当前价0.3172
+PENDLE/USDT:USDT---最高价6.6624---最低价6.4515---当前价6.4595
+BAND/USDT:USDT---最高价1.7673---最低价1.7318---当前价1.7615
+SSV/USDT:USDT---最高价45.718---最低价44.455---当前价45.136
+WLD/USDT:USDT---最高价4.8578---最低价4.656---当前价4.818
+SUSHI/USDT:USDT---最高价1.2482---最低价1.2277---当前价1.2404
+IOTX/USDT:USDT---最高价0.05557---最低价0.05434---当前价0.05537
+2024-05-29 12:40:59,859 - freqtrade.worker - INFO - Bot heartbeat. PID=354969, version='2024.5-dev-2386e79', state='RUNNING'
