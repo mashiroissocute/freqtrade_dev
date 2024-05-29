@@ -72,13 +72,13 @@ class SampleStrategy(IStrategy):
 
     # Hyperoptable parameters
     # emaThr = IntParameter(5, 55, default=200, space="buy")
-    period = IntParameter(5, 205, default=30, space="buy")
+    period = IntParameter(5, 205, default=1440, space="buy")
     highThr = IntParameter(0, 1, default=0.9, space="buy")
     lowThr = IntParameter(0, 1, default=1.1, space="buy")
     
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 200
+    startup_candle_count: int = 1440
 
     # Optional order type mapping.
     order_types = {
@@ -124,7 +124,7 @@ class SampleStrategy(IStrategy):
         # dataframe['ema'] = ta.EMA(dataframe, timeperiod=self.emaThr.value)
         dataframe['highest'] = dataframe['high'].rolling(window=self.period.value).max()
         dataframe['lowest'] = dataframe['low'].rolling(window=self.period.value).min()
-        print(dataframe)
+        # print(dataframe)
         
         # 假设你已经有了一个钉钉机器人的Webhook URL
         dingtalk_webhook_url = 'https://oapi.dingtalk.com/robot/send?access_token=126085542789784e1578a069991f6ad19f4ea6885d7e3148fa39eb948e6f38d3'
@@ -143,6 +143,9 @@ class SampleStrategy(IStrategy):
         # 计算告警条件
         high_alert_condition = dataframe['close'].iloc[-1] / dataframe['highest'].iloc[-1] < self.highThr.value
         low_alert_condition = dataframe['close'].iloc[-1] / dataframe['lowest'].iloc[-1] > self.lowThr.value
+
+        info_message = f"{metadata['pair']}---最高价{dataframe['highest'].iloc[-1]}---最低价{dataframe['lowest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
+        print(info_message)
 
         # 如果存在告警条件，发送告警消息到钉钉
         if high_alert_condition.any():
