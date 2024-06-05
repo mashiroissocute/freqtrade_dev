@@ -12,6 +12,7 @@ import hmac
 import hashlib
 import base64
 import urllib.parse
+import time
 
 from freqtrade.strategy import (BooleanParameter, CategoricalParameter, DecimalParameter,
                                 IStrategy, IntParameter)
@@ -64,7 +65,7 @@ class SampleStrategy(IStrategy):
     # trailing_stop_positive_offset = 0.0  # Disabled / not configured
 
     # Optimal timeframe for the strategy.
-    timeframe = '5m'
+    timeframe = '1m'
 
     # Run "populate_indicators()" only for new candle.
     process_only_new_candles = True
@@ -72,13 +73,15 @@ class SampleStrategy(IStrategy):
 
     # Hyperoptable parameters
     # emaThr = IntParameter(5, 55, default=200, space="buy")
-    period = IntParameter(5, 205, default=48, space="buy")
+    period = IntParameter(5, 205, default=240, space="buy")
     highThr = IntParameter(0, 1, default=0.95, space="buy")
     lowThr = IntParameter(0, 1, default=1.05, space="buy")
     
+    expiring_dict = {}
+    
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 50
+    startup_candle_count: int = 240
 
     # Optional order type mapping.
     order_types = {
@@ -144,47 +147,48 @@ class SampleStrategy(IStrategy):
         high_alert_condition = dataframe['close'].iloc[-1] / dataframe['highest'].iloc[-1] < self.highThr.value
         low_alert_condition = dataframe['close'].iloc[-1] / dataframe['lowest'].iloc[-1] > self.lowThr.value
 
-        info_message = f"{metadata['pair']}---最高价{dataframe['highest'].iloc[-1]}---最低价{dataframe['lowest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
-        print(info_message)
+        # info_message = f"{metadata['pair']}---最高价{dataframe['highest'].iloc[-1]}---最低价{dataframe['lowest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
 
         # 如果存在告警条件，发送告警消息到钉钉
         if high_alert_condition.any():
-            alert_message = f"{metadata['pair']}---最高价{dataframe['highest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
-            payload = {
-                "msgtype": "text",
-                "text": {
-                    "content": alert_message
+            
+            current_time = time.time()
+            value = self.expiring_dict.get(metadata['pair'])
+
+            if value is None or current_time > value:            
+                alert_message = f"{metadata['pair']}---最高价{dataframe['highest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
+                payload = {
+                    "msgtype": "text",
+                    "text": {
+                        "content": alert_message
+                    }
                 }
-            }
-            headers = {'Content-Type': 'application/json'}
-            response = requests.post(dingtalk_webhook_url, json=payload, headers=headers)
-        #     if response.status_code == 200:
-        #         print("告警消息已成功发送到钉钉")
-        #         print(alert_message)
-        #     else:
-        #         print("告警消息发送失败，错误码：", response.status_code)
-        # else:
-        #     print("未触发告警条件")
+                headers = {'Content-Type': 'application/json'}
+                response = requests.post(dingtalk_webhook_url, json=payload, headers=headers)
+                
+                new_value = current_time + 300
+                self.expiring_dict[metadata['pair']] = new_value
+
 
         
-        
         if low_alert_condition.any():
-            alert_message = f"{metadata['pair']}---最低价{dataframe['lowest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
-            payload = {
-                "msgtype": "text",
-                "text": {
-                    "content": alert_message
+            current_time = time.time()
+            value = self.expiring_dict.get(metadata['pair'])
+
+            if value is None or current_time > value:   
+                alert_message = f"{metadata['pair']}---最低价{dataframe['lowest'].iloc[-1]}---当前价{dataframe['close'].iloc[-1]}"
+                payload = {
+                    "msgtype": "text",
+                    "text": {
+                        "content": alert_message
+                    }
                 }
-            }
-            headers = {'Content-Type': 'application/json'}
-            response = requests.post(dingtalk_webhook_url, json=payload, headers=headers)
-        #     if response.status_code == 200:
-        #         print("告警消息已成功发送到钉钉")
-        #         print(alert_message)
-        #     else:
-        #         print("告警消息发送失败，错误码：", response.status_code)
-        # else:
-        #     print("未触发告警条件")
+                headers = {'Content-Type': 'application/json'}
+                response = requests.post(dingtalk_webhook_url, json=payload, headers=headers)
+                
+                new_value = current_time + 300
+                self.expiring_dict[metadata['pair']] = new_value
+
 
         return dataframe
 
